@@ -9,7 +9,7 @@
     "monorepo": "weather-app",
     "orgNpm": "@amyscript",
     "orgGit": "amyscript",
-    "gitRepo": "https://github.com/AmyScript/web_component_factory.git",
+    "gitRepo": "https://github.com/AmyScript/weather-app-components.git",
     "sass": {
       "name": "rh-sass",
       "pkg": "@rhelements/rh-sass",
@@ -21,7 +21,7 @@
     "url": ""
   },
   "license": "Apache-2.0",
-  "repository": "https://github.com/AmyScript/web_component_factory.git",
+  "repository": "https://github.com/AmyScript/weather-app-components.git",
   "scripts": {
     "start": "bash scripts/preinstall.sh && yarn run storybook",
     "lerna": "lerna",
