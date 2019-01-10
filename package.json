@@ -9,7 +9,7 @@
     "monorepo": "weather-app",
     "orgNpm": "@amyscript",
     "orgGit": "amyscript",
-    "gitRepo": "git@github.com/AmyScript/web_component_factory.git",
+    "gitRepo": "https://github.com/AmyScript/web_component_factory.git",
     "sass": {
       "name": "rh-sass",
       "pkg": "@rhelements/rh-sass",
