@@ -1,0 +1,9 @@
+{
+  "url": {
+    "name": "url",
+    "type": "String",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}

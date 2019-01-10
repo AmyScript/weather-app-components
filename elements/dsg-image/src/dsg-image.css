@@ -1,0 +1,9 @@
+:host { 
+  display: flex; 
+  justify-content: center;
+  }
+  img {
+    border-radius: 50%;
+    border: 2px solid #E8E8E8;
+  }
+:host([hidden]) { display: none; }
