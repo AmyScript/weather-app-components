@@ -1,0 +1,162 @@
+{
+  "name": "@amyscript/weather-app",
+  "version": "0.0.0",
+  "description": "The weather app factory",
+  "wcfactory": {
+    "askSASS": true,
+    "askProps": true,
+    "askHAX": true,
+    "monorepo": "weather-app",
+    "orgNpm": "@amyscript",
+    "orgGit": "amyscript",
+    "gitRepo": "git@github.com/AmyScript/web_component_factory.git",
+    "sass": {
+      "name": "rh-sass",
+      "pkg": "@rhelements/rh-sass",
+      "path": "rh-sass/rh-sass"
+    }
+  },
+  "author": {
+    "name": "amyscript",
+    "url": ""
+  },
+  "license": "Apache-2.0",
+  "repository": "git@github.com/AmyScript/web_component_factory.git",
+  "scripts": {
+    "start": "bash scripts/preinstall.sh && yarn run storybook",
+    "lerna": "lerna",
+    "preinstall": "bash scripts/preinstall.sh",
+    "postinstall": "bash scripts/postinstall.sh",
+    "init": "lerna init",
+    "test": "yarn run build && wct --configFile wct.conf.json test/index.html",
+    "build": "lerna run build --no-bail",
+    "publish": "echo 'NOTICE: You must run `lerna publish` manually'",
+    "test-suite-inject": "node scripts/test-suite-inject.js",
+    "storybook": "start-storybook -c .storybook -p 9001 -s ./elements",
+    "build-storybook": "build-storybook -c .storybook -o ../../storybooks/lrnwebcomponents",
+    "rebuild-wcfcache": "./node_modules/.bin/gulp",
+    "new": "yarn run rebuild-wcfcache && wcf element && yarn run test-suite-inject && yarn install --link-duplicates"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.6",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0",
+    "@babel/plugin-syntax-import-meta": "7.0.0",
+    "@babel/preset-env": "7.1.6",
+    "@emotion/core": "10.0.0",
+    "@emotion/styled-base": "10.0.0",
+    "@open-wc/webpack": "^0.1.0",
+    "@storybook/addon-a11y": "4.0.9",
+    "@storybook/addon-actions": "4.0.9",
+    "@storybook/addon-knobs": "4.0.9",
+    "@storybook/addon-notes": "4.0.8",
+    "@storybook/addon-options": "4.0.8",
+    "@storybook/addon-storysource": "4.0.9",
+    "@storybook/addon-viewport": "4.0.9",
+    "@storybook/addons": "4.0.9",
+    "@storybook/cli": "4.0.9",
+    "@storybook/polymer": "4.0.9",
+    "@webcomponents/webcomponentsjs": "2.2.1",
+    "babel-loader": "8.0.4",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-plugin-transform-custom-element-classes": "0.1.0",
+    "babel-plugin-transform-es2015-modules-umd": "6.24.1",
+    "babel-preset-env": "1.7.0",
+    "browser-sync": "2.26.3",
+    "chalk": "2.4.1",
+    "css-scss": "0.1.1",
+    "decomment": "0.9.2",
+    "del": "3.0.0",
+    "dialog-polyfill": "0.4.10",
+    "global": "4.3.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "8.0.0",
+    "gulp-clean-css": "4.0.0",
+    "gulp-concat-util": "0.5.5",
+    "gulp-copy": "4.0.1",
+    "gulp-rename": "1.4.0",
+    "gulp-replace": "1.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-sequence": "1.0.0",
+    "gulp-shell": "0.6.5",
+    "gulp-strip-css-comments": "2.0.0",
+    "gulp-svg-sprite": "1.5.0",
+    "gulp-trim": "1.0.2",
+    "husky": "1.2.0",
+    "inquirer-recursive": "0.0.5",
+    "jest": "23.6.0",
+    "lerna": "^3.5.1",
+    "lint-staged": "8.1.0",
+    "lodash": "4.17.11",
+    "lodash.clonedeep": "4.5.0",
+    "node-sass": "4.10.0",
+    "polymer-build": "3.1.1",
+    "polymer-webpack-loader": "2.0.3",
+    "prettier": "1.15.3",
+    "raw-loader": "0.5.1",
+    "react": "*",
+    "react-dom": "*",
+    "requirejs": "2.3.6",
+    "rollup": "0.67.3",
+    "rollup-plugin-babel": "4.0.3",
+    "rollup-plugin-commonjs": "9.2.0",
+    "rollup-plugin-delete": "0.1.2",
+    "rollup-plugin-terser": "3.0.0",
+    "strip-css-comments": "3.0.0",
+    "trim": "0.0.1",
+    "wct-browser-legacy": "1.0.2",
+    "web-component-tester": "6.9.0",
+    "webpack": "4.26.1",
+    "whatwg-fetch": "3.0.0",
+    "yo": "2.0.5"
+  },
+  "dependencies": {
+    "@lrnwebcomponents/deduping-fix": "^0.0.35",
+    "@lrnwebcomponents/hax-body": "^0.0.35",
+    "@polymer/lit-element": "0.6.4",
+    "@polymer/polymer": "3.1.0",
+    "lit-html": "0.14.0",
+    "slim-js": "4.0.5"
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,json}": [
+        "prettier --write",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "elements/**/*.*.js",
+      "**/analysis-error.json",
+      "themes/**/*.*.js",
+      "libraries/**/*.js"
+    ]
+  },
+  "keywords": [
+    "yeoman-generator",
+    "custom-elements",
+    "web-components",
+    "webcomponents",
+    "polymer",
+    "lit-element",
+    "skate-js",
+    "slim-js",
+    "twig",
+    "lit-html",
+    "vanillajs"
+  ],
+  "private": true,
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "workspaces": {
+    "packages": [
+      "elements/*",
+      "themes/*"
+    ],
+    "nohoist": []
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run test-suite-inject > /dev/null && lint-staged"
+    }
+  }
+}
