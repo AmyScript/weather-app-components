@@ -21,7 +21,7 @@
     "url": ""
   },
   "license": "Apache-2.0",
-  "repository": "git@github.com/AmyScript/web_component_factory.git",
+  "repository": "https://github.com/AmyScript/web_component_factory.git",
   "scripts": {
     "start": "bash scripts/preinstall.sh && yarn run storybook",
     "lerna": "lerna",
