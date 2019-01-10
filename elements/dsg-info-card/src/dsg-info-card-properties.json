@@ -1,0 +1,9 @@
+{
+  "imageUrl": {
+    "name": "imageUrl",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
