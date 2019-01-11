@@ -3,7 +3,6 @@
  * @license MIT, see License.md for full text.
  */
 import { LitElement, html } from "@polymer/lit-element";
-import '@amyscript/dsg-image/dsg-image.js';
 
 /**
  * `dsg-info-card`
