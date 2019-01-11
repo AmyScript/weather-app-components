@@ -16,7 +16,7 @@
       "hax": "src/dsg-info-card-hax.json"
     }
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Combines various elements into a info card",
   "repository": {
     "type": "git",
