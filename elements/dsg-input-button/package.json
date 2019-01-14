@@ -1,0 +1,51 @@
+{
+  "name": "@amyscript/dsg-input-button",
+  "wcfactory": {
+    "className": "DsgInputButton",
+    "customElementClass": "LitElement",
+    "elementName": "dsg-input-button",
+    "generator-wcfactory-version": "0.6.3",
+    "useHAX": false,
+    "useSass": false,
+    "files": {
+      "css": "src/dsg-input-button.css",
+      "scss": "src/dsg-input-button.scss",
+      "html": "src/dsg-input-button.html",
+      "js": "src/dsg-input-button.js",
+      "properties": "src/dsg-input-button-properties.json",
+      "hax": "src/dsg-input-button-hax.json"
+    }
+  },
+  "version": "1.0.3",
+  "description": "input button",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmyScript/weather-app-components.git"
+  },
+  "main": "dsg-input-button.js",
+  "module": "dsg-input-button.es6.js",
+  "umd": "dsg-input-button.umd.js",
+  "amd": "dsg-input-button.amd.js",
+  "scripts": {
+    "test": "../../node_modules/.bin/wct --configFile ../../wct.conf.json node_modules/@amyscript/dsg-input-button/test/",
+    "start":"yarn run dev","build":"../../node_modules/.bin/gulp && ../../node_modules/.bin/rollup -c && ../../node_modules/.bin/prettier --ignore-path ../../.prettierignore --write '**/*.{js,json}'","dev":"concurrently --kill-others \"yarn run watch\" \"yarn run serve\"","watch":"../../node_modules/.bin/gulp dev","serve":"polymer serve --npm --module-resolution=node --open","lighthouse":"../../node_modules/.bin/gulp lighthouse"
+  },
+  "author": {
+    "name": "amyscript"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@polymer/lit-element":"^0.6.1"
+  },
+  "devDependencies": {
+    "web-animations-js":"2.3.1","@lrnwebcomponents/deduping-fix":"0.0.35","@polymer/iron-demo-helpers":"3.0.2","@polymer/iron-component-page":"github:PolymerElements/iron-component-page","@webcomponents/webcomponentsjs":"2.2.1","concurrently":"4.1.0","gulp-babel":"8.0.0","gulp-sourcemaps":"2.6.4","lodash":"4.17.11","polymer-cli":"1.9.1","polymer-build":"3.1.1","wct-browser-legacy":"1.0.2"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "web-components",
+    "html"
+  ]
+}

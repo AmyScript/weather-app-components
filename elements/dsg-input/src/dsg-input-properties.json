@@ -1,0 +1,16 @@
+{
+  "city": {
+    "name": "city",
+    "type": "String",
+    "value": " ",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "id": {
+    "name": "id",
+    "type": "String",
+    "value": " ",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}

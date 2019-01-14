@@ -1,0 +1,13 @@
+:host {
+  display: block;
+}
+
+:host([hidden]) {
+  display: none;
+}
+
+input {
+  background: #FFFFFF;
+  border-radius: 20px;
+  border-style: none;
+}
