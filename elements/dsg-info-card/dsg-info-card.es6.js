@@ -7,5 +7,4 @@ import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";
   display: none;
 }
 </style>
-<slot></slot>
-<div>${this.imageUrl}</div>`}static get properties(){return{imageUrl:{name:"imageUrl",type:"String",value:"\"\"",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-info-card"}constructor(){super()}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-info-card",DsgInfoCard);export{DsgInfoCard};
+`}static get properties(){return{imageUrl:{name:"imageUrl",type:"String",value:"\"\"",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-info-card"}constructor(){super()}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-info-card",DsgInfoCard);export{DsgInfoCard};

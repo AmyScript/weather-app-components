@@ -3,7 +3,6 @@
  * @license MIT, see License.md for full text.
  */
 import { LitElement, html } from "@polymer/lit-element";
-import '@amyscript/dsg-image/dsg-image.js';
 
 /**
  * `dsg-info-card`
@@ -18,34 +17,32 @@ import '@amyscript/dsg-image/dsg-image.js';
  * @demo demo/index.html
  */
 class DsgInfoCard extends LitElement {
-
   // render function
   render() {
     return html`
-<style>:host {
-  display: block;
-}
+      <style>
+        :host {
+          display: block;
+        }
 
-:host([hidden]) {
-  display: none;
-}
-</style>
-<div>This is the info card</div>
-<dsg-image url=${this.imageUrl}></dsg-image>`;
+        :host([hidden]) {
+          display: none;
+        }
+      </style>
+    `;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-  "imageUrl": {
-    "name": "imageUrl",
-    "type": "String",
-    "value": "",
-    "reflectToAttribute": false,
-    "observer": false
-  }
-}
-;
+      imageUrl: {
+        name: "imageUrl",
+        type: "String",
+        value: '""',
+        reflectToAttribute: false,
+        observer: false
+      }
+    };
   }
 
   /**
@@ -66,7 +63,12 @@ class DsgInfoCard extends LitElement {
   connectedCallback() {
     super.connectedCallback();
   }
+  // static get observedAttributes() {
+  //   return [];
+  // }
+  // disconnectedCallback() {}
 
+  // attributeChangedCallback(attr, oldValue, newValue) {}
 }
 customElements.define("dsg-info-card", DsgInfoCard);
 export { DsgInfoCard };

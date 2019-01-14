@@ -6,6 +6,15 @@ import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";
 :host([hidden]) {
   display: none;
 }
+
+input {
+  background: #FFFFFF;
+  border-radius: 20px;
+  border-style: none;
+}
 </style>
-<slot></slot>
-<div>${this.city}</div>`}static get properties(){return{city:{name:"city",type:"String",value:"",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super()}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input",DsgInput);export{DsgInput};
+<input
+  type="text"
+  value=${this.city}
+  @input=${this.handleInput}
+/>`}static get properties(){return{city:{name:"city",type:"String",value:" ",reflectToAttribute:!1,observer:!1},id:{name:"id",type:"String",value:" ",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super();this.city="";this.id=""}handleInput(e){this.city=e.target.value}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input",DsgInput);export{DsgInput};
