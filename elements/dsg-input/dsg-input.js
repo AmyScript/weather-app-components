@@ -36,7 +36,7 @@ class DsgInput extends LitElement {
         }
       </style>
       <input
-        id=${this.id}
+        id=${this.inputId}
         type="text"
         value=${this.city}
         @input=${this.handleInput}
@@ -54,8 +54,8 @@ class DsgInput extends LitElement {
         reflectToAttribute: false,
         observer: false
       },
-      id: {
-        name: "id",
+      inputId: {
+        name: "inputId",
         type: "String",
         value: " ",
         reflectToAttribute: false,

@@ -6,8 +6,8 @@
     "reflectToAttribute": false,
     "observer": false
   },
-  "id": {
-    "name": "id",
+  "inputId": {
+    "name": "inputId",
     "type": "String",
     "value": " ",
     "reflectToAttribute": false,

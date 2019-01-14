@@ -14,8 +14,8 @@ input {
 }
 </style>
 <input
-  id=${this.id}
+  id=${this.inputId}
   type="text"
   value=${this.city}
   @input=${this.handleInput}
-/>`}static get properties(){return{city:{name:"city",type:"String",value:" ",reflectToAttribute:!1,observer:!1},id:{name:"id",type:"String",value:" ",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super();this.city="";this.id=""}handleInput(e){this.city=e.target.value}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input",DsgInput);export{DsgInput};
+/>`}static get properties(){return{city:{name:"city",type:"String",value:" ",reflectToAttribute:!1,observer:!1},inputId:{name:"inputId",type:"String",value:" ",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super();this.city="";this.id=""}handleInput(e){this.city=e.target.value}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input",DsgInput);export{DsgInput};
