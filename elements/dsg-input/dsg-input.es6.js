@@ -14,6 +14,7 @@ input {
 }
 </style>
 <input
+  id=${this.id}
   type="text"
   value=${this.city}
   @input=${this.handleInput}
