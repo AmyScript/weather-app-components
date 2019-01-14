@@ -47,22 +47,15 @@ class DsgInputButton extends LitElement {
           font-size: 14px;
         }
       </style>
-      <button id=${this.id} @click="${this.onClick}">+</button>
+      <button id=${this.buttonId} @click="${this.onClick}">+</button>
     `;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-      onClick: {
-        name: "onClick",
-        type: "String",
-        value: "",
-        reflectToAttribute: false,
-        observer: false
-      },
-      id: {
-        name: "id",
+      buttonId: {
+        name: "buttonId",
         type: "String",
         value: "",
         reflectToAttribute: false,
@@ -82,7 +75,7 @@ class DsgInputButton extends LitElement {
   // life cycle
   constructor() {
     super();
-    this.id = "";
+    this.buttonId = "";
   }
 
   /**
@@ -91,7 +84,7 @@ class DsgInputButton extends LitElement {
   onClick() {
     const event = new CustomEvent("buttonClicked", {
       detail: {
-        button: this.id
+        button: this.buttonId
       },
       bubbles: true
     });

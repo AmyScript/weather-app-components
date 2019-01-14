@@ -18,4 +18,4 @@ input {
   type="text"
   value=${this.city}
   @input=${this.handleInput}
-/>`}static get properties(){return{city:{name:"city",type:"String",value:" ",reflectToAttribute:!1,observer:!1},inputId:{name:"inputId",type:"String",value:" ",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super();this.city="";this.id=""}handleInput(e){this.city=e.target.value}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input",DsgInput);export{DsgInput};
+/>`}static get properties(){return{city:{name:"city",type:"String",value:" ",reflectToAttribute:!1,observer:!1},inputId:{name:"inputId",type:"String",value:" ",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super();this.city="";this.inputId=""}handleInput(e){this.city=e.target.value}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input",DsgInput);export{DsgInput};

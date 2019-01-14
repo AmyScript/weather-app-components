@@ -30,7 +30,7 @@ class DsgInputButton extends LitElement {
   // life cycle
   constructor() {
     super();
-    this.id = "";
+    this.buttonId = "";
   }
 
   /**
@@ -39,7 +39,7 @@ class DsgInputButton extends LitElement {
   onClick() {
     const event = new CustomEvent("buttonClicked", {
       detail: {
-        button: this.id
+        button: this.buttonId
       },
       bubbles: true
     });
