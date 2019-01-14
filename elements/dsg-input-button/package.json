@@ -16,7 +16,7 @@
       "hax": "src/dsg-input-button-hax.json"
     }
   },
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "input button",
   "repository": {
     "type": "git",
