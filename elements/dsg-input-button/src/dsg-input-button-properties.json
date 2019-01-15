@@ -5,5 +5,12 @@
     "value": "",
     "reflectToAttribute": false,
     "observer": false
+  },
+  "buttonFunction": {
+    "name": "buttonFunction",
+    "type": "Object",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
   }
 }

@@ -60,6 +60,13 @@ class DsgInputButton extends LitElement {
         value: "",
         reflectToAttribute: false,
         observer: false
+      },
+      buttonFunction: {
+        name: "buttonFunction",
+        type: "Object",
+        value: "",
+        reflectToAttribute: false,
+        observer: false
       }
     };
   }
@@ -76,6 +83,7 @@ class DsgInputButton extends LitElement {
   constructor() {
     super();
     this.buttonId = "";
+    this.buttonFunction = () => console.log("hello there");
   }
 
   /**
@@ -89,6 +97,7 @@ class DsgInputButton extends LitElement {
       bubbles: true
     });
     this.dispatchEvent(event);
+    this.buttonFunction();
     console.log("clicked" + this.id);
   }
   /**

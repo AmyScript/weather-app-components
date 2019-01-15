@@ -76,7 +76,7 @@ class DsgInput extends LitElement {
   constructor() {
     super();
     this.city = "";
-    this.inputId = "";
+    this.id = "";
   }
 
   handleInput(e) {

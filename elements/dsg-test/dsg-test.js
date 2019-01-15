@@ -5,8 +5,8 @@
 import { LitElement, html } from "@polymer/lit-element";
 
 /**
- * `dsg-input-button`
- * `input button`
+ * `dsg-test`
+ * `test component`
  *
  * @microcopy - language worth noting:
  *  -
@@ -16,37 +16,48 @@ import { LitElement, html } from "@polymer/lit-element";
  * @lit-element
  * @demo demo/index.html
  */
-class DsgInputButton extends LitElement {
-  /* REQUIRED FOR TOOLING DO NOT TOUCH */
+class DsgTest extends LitElement {
+  // render function
+  render() {
+    return html`
+      <style>
+        :host {
+          display: block;
+        }
+
+        :host([hidden]) {
+          display: none;
+        }
+      </style>
+      <slot></slot>
+      <div>${this.color}</div>
+    `;
+  }
+
+  // properties available to the custom element for data binding
+  static get properties() {
+    return {
+      color: {
+        name: "color",
+        type: "String",
+        value: "red",
+        reflectToAttribute: false,
+        observer: false
+      }
+    };
+  }
 
   /**
    * Store the tag name to make it easier to obtain directly.
    * @notice function name must be here for tooling to operate correctly
    */
   tag() {
-    return "dsg-input-button";
+    return "dsg-test";
   }
 
   // life cycle
   constructor() {
     super();
-    this.buttonId = "";
-    this.buttonFunction = () => console.log("hello there");
-  }
-
-  /**
-   * Method to emit event with button's id in e.detail.button when the button is clicked
-   */
-  onClick() {
-    const event = new CustomEvent("buttonClicked", {
-      detail: {
-        button: this.buttonId
-      },
-      bubbles: true
-    });
-    this.dispatchEvent(event);
-    this.buttonFunction();
-    console.log("clicked" + this.id);
   }
   /**
    * life cycle, element is afixed to the DOM
@@ -61,5 +72,5 @@ class DsgInputButton extends LitElement {
 
   // attributeChangedCallback(attr, oldValue, newValue) {}
 }
-customElements.define("dsg-input-button", DsgInputButton);
-export { DsgInputButton };
+customElements.define("dsg-test", DsgTest);
+export { DsgTest };
