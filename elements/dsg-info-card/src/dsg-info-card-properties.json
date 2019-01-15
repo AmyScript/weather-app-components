@@ -5,5 +5,33 @@
     "value": "\"\"",
     "reflectToAttribute": false,
     "observer": false
+  },
+  "heading": {
+    "name": "heading",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "text": {
+    "name": "text",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardHeight": {
+    "name": "cardHeight",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardWidth": {
+    "name": "cardWidth",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
   }
 }

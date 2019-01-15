@@ -1,7 +1,15 @@
 :host {
-  display: block;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 :host([hidden]) {
   display: none;
+}
+
+.card-content {
+  width: 100%;
 }

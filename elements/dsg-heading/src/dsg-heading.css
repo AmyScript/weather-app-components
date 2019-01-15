@@ -1,0 +1,14 @@
+:host { 
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 64px;
+  color: #000000; 
+  margin: 0px;
+}
+:host([hidden]) { display: none; }
+h3 {
+  margin: 0;
+}

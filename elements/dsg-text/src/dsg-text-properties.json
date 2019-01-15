@@ -1,0 +1,9 @@
+{
+  "content": {
+    "name": "content",
+    "type": "String",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}

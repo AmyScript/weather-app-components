@@ -1,0 +1,12 @@
+
+:host { 
+  box-sizing: border-box;
+  width: ${this.width};
+  height: ${this.height};
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+:host([hidden]) { display: none; }

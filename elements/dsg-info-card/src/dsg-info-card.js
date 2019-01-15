@@ -3,6 +3,10 @@
  * @license MIT, see License.md for full text.
  */
 import { LitElement, html } from "@polymer/lit-element";
+import "@amyscript/dsg-image/dsg-image.js";
+import "@amyscript/dsg-heading/dsg-heading.js";
+import "@amyscript/dsg-text/dsg-text.js";
+import "@amyscript/dsg-card/dsg-card.js";
 
 /**
  * `dsg-info-card`
@@ -30,6 +34,11 @@ class DsgInfoCard extends LitElement {
   // life cycle
   constructor() {
     super();
+    this.imageUrl = "";
+    this.heading = "";
+    this.text = "";
+    this.cardHeight = "100%";
+    this.cardWidth = "300px";
   }
   /**
    * life cycle, element is afixed to the DOM

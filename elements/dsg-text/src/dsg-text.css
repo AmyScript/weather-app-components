@@ -1,0 +1,11 @@
+:host { 
+  display: block; 
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #959595;
+  }
+:host([hidden]) { display: none; }

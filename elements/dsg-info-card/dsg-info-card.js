@@ -3,6 +3,10 @@
  * @license MIT, see License.md for full text.
  */
 import { LitElement, html } from "@polymer/lit-element";
+import "@amyscript/dsg-image/dsg-image.js";
+import "@amyscript/dsg-heading/dsg-heading.js";
+import "@amyscript/dsg-text/dsg-text.js";
+import "@amyscript/dsg-card/dsg-card.js";
 
 /**
  * `dsg-info-card`
@@ -22,13 +26,30 @@ class DsgInfoCard extends LitElement {
     return html`
       <style>
         :host {
-          display: block;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
         }
 
         :host([hidden]) {
           display: none;
         }
+
+        .card-content {
+          width: 100%;
+        }
       </style>
+      <slot></slot>
+      <dsg-card width=${this.cardWidth} height=${this.cardHeight}>
+        <div class="card-content">
+          <dsg-image url=${this.imageUrl} /><dsg-heading
+            content=${this.heading}
+          />
+        </div>
+        <dsg-text content=${this.text}></dsg-text>
+      </dsg-card>
     `;
   }
 
@@ -37,6 +58,34 @@ class DsgInfoCard extends LitElement {
     return {
       imageUrl: {
         name: "imageUrl",
+        type: "String",
+        value: '""',
+        reflectToAttribute: false,
+        observer: false
+      },
+      heading: {
+        name: "heading",
+        type: "String",
+        value: '""',
+        reflectToAttribute: false,
+        observer: false
+      },
+      text: {
+        name: "text",
+        type: "String",
+        value: '""',
+        reflectToAttribute: false,
+        observer: false
+      },
+      cardHeight: {
+        name: "cardHeight",
+        type: "String",
+        value: '""',
+        reflectToAttribute: false,
+        observer: false
+      },
+      cardWidth: {
+        name: "cardWidth",
         type: "String",
         value: '""',
         reflectToAttribute: false,
@@ -56,6 +105,11 @@ class DsgInfoCard extends LitElement {
   // life cycle
   constructor() {
     super();
+    this.imageUrl = "";
+    this.heading = "";
+    this.text = "";
+    this.cardHeight = "100%";
+    this.cardWidth = "300px";
   }
   /**
    * life cycle, element is afixed to the DOM

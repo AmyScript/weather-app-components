@@ -1,0 +1,16 @@
+{
+  "width": {
+    "name": "width",
+    "type": "String",
+    "value": "300px",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "height": {
+    "name": "height",
+    "type": "String",
+    "value": "300px",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
