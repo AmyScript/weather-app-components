@@ -16,7 +16,7 @@
       "hax": "src/dsg-test-hax.json"
     }
   },
-  "version": "2.0.4",
+  "version": "3.0.0-alpha.0",
   "description": "test component",
   "repository": {
     "type": "git",
