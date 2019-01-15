@@ -33,6 +33,15 @@ class DsgInput extends LitElement {
           background: #ffffff;
           border-radius: 20px;
           border-style: none;
+          font-size: 25px;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          line-height: normal;
+        }
+
+        input:focus {
+          outline: none;
         }
       </style>
       <input

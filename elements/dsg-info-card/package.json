@@ -41,6 +41,9 @@
   "license": "MIT",
   "dependencies": {
     "@amyscript/dsg-image": "^3.0.0-alpha.0",
+    "@amyscript/dsg-card": "^3.0.0-alpha.0",
+    "@amyscript/dsg-heading": "^3.0.0-alpha.0",
+    "@amyscript/dsg-text": "^3.0.0-alpha.0",
     "@polymer/lit-element": "^0.6.1"
   },
   "devDependencies": {

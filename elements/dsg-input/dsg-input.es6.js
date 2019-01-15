@@ -11,8 +11,16 @@ input {
   background: #FFFFFF;
   border-radius: 20px;
   border-style: none;
+  font-size: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
 }
-</style>
+
+input:focus {
+  outline: none;
+}</style>
 <input
   id=${this.inputId}
   type="text"
