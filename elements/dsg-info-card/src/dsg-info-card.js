@@ -39,6 +39,7 @@ class DsgInfoCard extends LitElement {
     this.text = "";
     this.cardHeight = "100%";
     this.cardWidth = "300px";
+    this.cardTitle = "";
   }
   /**
    * life cycle, element is afixed to the DOM

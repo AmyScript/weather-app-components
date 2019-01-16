@@ -32,6 +32,7 @@ class DsgInput extends LitElement {
     super();
     this.city = "";
     this.inputId = "";
+    this.width = "100%";
   }
 
   handleInput(e) {

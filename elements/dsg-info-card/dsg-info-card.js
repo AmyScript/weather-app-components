@@ -37,6 +37,21 @@ class DsgInfoCard extends LitElement {
           display: none;
         }
 
+        dsg-image {
+          padding-right: 20px;
+        }
+
+        .card-title {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: bold;
+          line-height: normal;
+          font-size: 24px;
+          text-align: center;
+          color: #df5555;
+          padding-bottom: 15px;
+        }
+
         .card-content {
           width: 100%;
           display: flex;
@@ -47,6 +62,7 @@ class DsgInfoCard extends LitElement {
       </style>
       <slot></slot>
       <dsg-card width=${this.cardWidth} height=${this.cardHeight}>
+        <div class="card-title">${this.cardTitle}</div>
         <div class="card-content">
           <dsg-image url=${this.imageUrl}></dsg-image
           ><dsg-heading content=${this.heading}></dsg-heading>
@@ -93,6 +109,13 @@ class DsgInfoCard extends LitElement {
         value: '""',
         reflectToAttribute: false,
         observer: false
+      },
+      cardTitle: {
+        name: "cardTitle",
+        type: "String",
+        value: '""',
+        reflectToAttribute: false,
+        observer: false
       }
     };
   }
@@ -113,6 +136,7 @@ class DsgInfoCard extends LitElement {
     this.text = "";
     this.cardHeight = "100%";
     this.cardWidth = "300px";
+    this.cardTitle = "";
   }
   /**
    * life cycle, element is afixed to the DOM

@@ -12,5 +12,12 @@
     "value": " ",
     "reflectToAttribute": false,
     "observer": false
+  },
+  "width": {
+    "name": "width",
+    "type": "String",
+    "value": " ",
+    "reflectToAttribute": false,
+    "observer": false
   }
 }

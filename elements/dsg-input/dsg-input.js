@@ -38,6 +38,7 @@ class DsgInput extends LitElement {
           font-style: normal;
           font-weight: bold;
           line-height: normal;
+          width: ${this.width};
         }
 
         input:focus {
@@ -69,6 +70,13 @@ class DsgInput extends LitElement {
         value: " ",
         reflectToAttribute: false,
         observer: false
+      },
+      width: {
+        name: "width",
+        type: "String",
+        value: " ",
+        reflectToAttribute: false,
+        observer: false
       }
     };
   }
@@ -86,6 +94,7 @@ class DsgInput extends LitElement {
     super();
     this.city = "";
     this.inputId = "";
+    this.width = "100%";
   }
 
   handleInput(e) {

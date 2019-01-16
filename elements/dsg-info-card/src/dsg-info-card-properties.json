@@ -33,5 +33,12 @@
     "value": "\"\"",
     "reflectToAttribute": false,
     "observer": false
+  },
+  "cardTitle": {
+    "name": "cardTitle",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
   }
 }

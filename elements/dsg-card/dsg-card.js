@@ -30,6 +30,7 @@ class DsgCard extends LitElement {
           display: flex;
           flex-direction: column;
           align-items: center;
+          background-color: white;
         }
         :host([hidden]) {
           display: none;
