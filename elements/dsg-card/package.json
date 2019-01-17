@@ -16,7 +16,7 @@
       "hax": "src/dsg-card-hax.json"
     }
   },
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Card for info card",
   "repository": {
     "type": "git",
