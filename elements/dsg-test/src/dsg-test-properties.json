@@ -1,9 +1,1 @@
-{
-  "color": {
-    "name": "color",
-    "type": "String",
-    "value": "red",
-    "reflectToAttribute": false,
-    "observer": false
-  }
-}
+{}

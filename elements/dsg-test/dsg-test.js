@@ -6,7 +6,7 @@ import { LitElement, html } from "@polymer/lit-element";
 
 /**
  * `dsg-test`
- * `test component`
+ * `test`
  *
  * @microcopy - language worth noting:
  *  -
@@ -30,21 +30,12 @@ class DsgTest extends LitElement {
         }
       </style>
       <slot></slot>
-      <div>${this.color}</div>
     `;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
-    return {
-      color: {
-        name: "color",
-        type: "String",
-        value: "red",
-        reflectToAttribute: false,
-        observer: false
-      }
-    };
+    return {};
   }
 
   /**

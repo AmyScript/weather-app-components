@@ -13,7 +13,7 @@
   ],
   "env": {
     "development": {
-      "compact": false
+      "compact": true
     }
   }
 }

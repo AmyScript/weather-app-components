@@ -6,7 +6,7 @@ import { LitElement, html } from "@polymer/lit-element";
 
 /**
  * `dsg-test`
- * `test component`
+ * `test`
  *
  * @microcopy - language worth noting:
  *  -

@@ -1,7 +1,7 @@
 # &lt;dsg-test&gt;
 
 Test
-> test component
+> test
 
 ## Usage
 To use this web component in your project you can utilize one of the following styles of syntax.
