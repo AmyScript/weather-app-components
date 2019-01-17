@@ -2,7 +2,7 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 
 /**
  * `dsg-image`
@@ -33,7 +33,7 @@ class DsgImage extends LitElement {
           display: none;
         }
       </style>
-      <div><img src=${this.url} /></div>
+      <div><img src="${this.url}" /></div>
     `;
   }
 

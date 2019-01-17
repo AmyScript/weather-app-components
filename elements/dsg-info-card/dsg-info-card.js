@@ -2,7 +2,7 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 import "@amyscript/dsg-image/dsg-image.js";
 import "@amyscript/dsg-heading/dsg-heading.js";
 import "@amyscript/dsg-text/dsg-text.js";
@@ -61,13 +61,13 @@ class DsgInfoCard extends LitElement {
         }
       </style>
       <slot></slot>
-      <dsg-card width=${this.cardWidth} height=${this.cardHeight}>
+      <dsg-card width="${this.cardWidth}" height="${this.cardHeight}">
         <div class="card-title">${this.cardTitle}</div>
         <div class="card-content">
-          <dsg-image url=${this.imageUrl}></dsg-image
-          ><dsg-heading content=${this.heading}></dsg-heading>
+          <dsg-image url="${this.imageUrl}"></dsg-image
+          ><dsg-heading content="${this.heading}"></dsg-heading>
         </div>
-        <dsg-text content=${this.text}></dsg-text>
+        <dsg-text content="${this.text}"></dsg-text>
       </dsg-card>
     `;
   }

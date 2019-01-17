@@ -2,7 +2,7 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 import "@amyscript/dsg-image/dsg-image.js";
 import "@amyscript/dsg-heading/dsg-heading.js";
 import "@amyscript/dsg-text/dsg-text.js";

@@ -2,7 +2,7 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 
 /**
  * `dsg-input-button`
@@ -47,7 +47,7 @@ class DsgInputButton extends LitElement {
           font-size: 14px;
         }
       </style>
-      <button id=${this.buttonId} @click="${this.onClick}">+</button>
+      <button id="${this.buttonId}" @click="${this.onClick}">+</button>
     `;
   }
 

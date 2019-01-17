@@ -2,7 +2,7 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "@polymer/lit-element";
+import { LitElement, html } from "lit-element";
 
 /**
  * `dsg-input`
@@ -46,10 +46,10 @@ class DsgInput extends LitElement {
         }
       </style>
       <input
-        id=${this.inputId}
+        id="${this.inputId}"
         type="text"
-        value=${this.city}
-        @input=${this.handleInput}
+        value="${this.city}"
+        @input="${this.handleInput}"
       />
     `;
   }
