@@ -55,7 +55,7 @@
       "lighthouse": "../../node_modules/.bin/gulp lighthouse"
     },
     "dependencies": {
-      "@polymer/lit-element": "^0.6.1"
+      "lit-element": "^2.0.0-rc.2"
     },
     "devDependencies": {
       "web-animations-js": "2.3.1",

@@ -4,8 +4,14 @@ module.exports = (baseConfig, env, defaultConfig) => {
     test: [/\.js$/],
     loader: require.resolve(
       "@open-wc/webpack/loaders/import-meta-url-loader.js"
-    )
+    ),
+    resolve: {
+      alias: {
+        "@amyscript": "../node_modules/@amyscript"
+      }
+    }
   });
+
   // defaultConfig.resolve.alias = {
   //   ...defaultConfig.resolve.alias,
   //   '@amyscript/dsg-image/dsg-image.js': path.resolve(__dirname, '../node_modules/@amyscript/dsg-image/dsg-image.js'),
