@@ -16,7 +16,7 @@
       "hax": "src/dsg-heading-hax.json"
     }
   },
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Heading for info card",
   "repository": {
     "type": "git",
