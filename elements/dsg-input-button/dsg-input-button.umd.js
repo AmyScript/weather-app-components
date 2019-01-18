@@ -1,2 +1,116 @@
-!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports,require("@polymer/lit-element")):"function"==typeof define&&define.amd?define(["exports","@polymer/lit-element"],e):e(t.DsgInputButton={},t.litElement)}(this,function(t,e){"use strict";function n(t,e){for(var n=0;n<e.length;n++){var o=e[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(t,o.key,o)}}function o(t,e,o){return e&&n(t.prototype,e),o&&n(t,o),t}function r(t){return(r=Object.setPrototypeOf?Object.getPrototypeOf:function(t){return t.__proto__||Object.getPrototypeOf(t)})(t)}function i(t,e){return(i=Object.setPrototypeOf||function(t,e){return t.__proto__=e,t})(t,e)}function u(t,e){return!e||"object"!=typeof e&&"function"!=typeof e?function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(t):e}function c(t,e,n){return(c="undefined"!=typeof Reflect&&Reflect.get?Reflect.get:function(t,e,n){var o=function(t,e){for(;!Object.prototype.hasOwnProperty.call(t,e)&&null!==(t=r(t)););return t}(t,e);if(o){var i=Object.getOwnPropertyDescriptor(o,e);return i.get?i.get.call(n):i.value}})(t,e,n||t)}function l(){var t,e,n=(t=["\n<style>:host {\n  display: block;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\nbutton {\n  width: 23px;\n  height: 23px;\n  border-radius: 50%;\n  background-color: #DF5555;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: none;\n  padding: 0px;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 14px;\n}</style>\n<button id=",' @click="','">+</button>'],e||(e=t.slice(0)),Object.freeze(Object.defineProperties(t,{raw:{value:Object.freeze(e)}})));return l=function(){return n},n}var f=function(t){function n(){var t;return function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,n),(t=u(this,r(n).call(this))).buttonId="",t.buttonFunction=function(){return console.log("hello there")},t}return function(t,e){if("function"!=typeof e&&null!==e)throw new TypeError("Super expression must either be null or a function");t.prototype=Object.create(e&&e.prototype,{constructor:{value:t,writable:!0,configurable:!0}}),e&&i(t,e)}(n,e.LitElement),o(n,[{key:"render",value:function(){return e.html(l(),this.buttonId,this.onClick)}},{key:"tag",value:function(){return"dsg-input-button"}}],[{key:"properties",get:function(){return{buttonId:{name:"buttonId",type:"String",value:"",reflectToAttribute:!1,observer:!1},buttonFunction:{name:"buttonFunction",type:"Object",value:"",reflectToAttribute:!1,observer:!1}}}}]),o(n,[{key:"onClick",value:function(){var t=new CustomEvent("buttonClicked",{detail:{button:this.buttonId},bubbles:!0});this.dispatchEvent(t),this.buttonFunction(),console.log("clicked"+this.id)}},{key:"connectedCallback",value:function(){c(r(n.prototype),"connectedCallback",this).call(this)}}]),n}();customElements.define("dsg-input-button",f),t.DsgInputButton=f,Object.defineProperty(t,"__esModule",{value:!0})});
-//# sourceMappingURL=dsg-input-button.umd.js.map
+/**
+ * Copyright 2019 Amy
+ * @license MIT, see License.md for full text.
+ */
+import { LitElement, html } from "@polymer/lit-element";
+
+/**
+ * `dsg-input-button`
+ * `input button`
+ *
+ * @microcopy - language worth noting:
+ *  -
+ *
+ * @customElement
+ * @lit-html
+ * @lit-element
+ * @demo demo/index.html
+ */
+class DsgInputButton extends LitElement {
+  
+  // render function
+  render() {
+    return html`
+<style>:host {
+  display: block;
+}
+
+:host([hidden]) {
+  display: none;
+}
+
+button {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #DF5555;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+}</style>
+<button id=${this.buttonId} @click="${this.onClick}">+</button>`;
+  }
+
+  // properties available to the custom element for data binding
+  static get properties() {
+    return {
+  "buttonId": {
+    "name": "buttonId",
+    "type": "String",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "buttonFunction": {
+    "name": "buttonFunction",
+    "type": "Object",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
+  }
+
+  /**
+   * Store the tag name to make it easier to obtain directly.
+   * @notice function name must be here for tooling to operate correctly
+   */
+  tag() {
+    return "dsg-input-button";
+  }
+
+  // life cycle
+  constructor() {
+    super();
+    this.buttonId = "";
+    this.buttonFunction = () => console.log("hello there");
+  }
+
+  /**
+   * Method to emit event with button's id in e.detail.button when the button is clicked
+   */
+  onClick() {
+    const event = new CustomEvent("buttonClicked", {
+      detail: {
+        button: this.buttonId
+      },
+      bubbles: true
+    });
+    this.dispatchEvent(event);
+    this.buttonFunction();
+    console.log("clicked" + this.id);
+  }
+  /**
+   * life cycle, element is afixed to the DOM
+   */
+  connectedCallback() {
+    super.connectedCallback();
+  }
+  // static get observedAttributes() {
+  //   return [];
+  // }
+  // disconnectedCallback() {}
+
+  // attributeChangedCallback(attr, oldValue, newValue) {}
+}
+customElements.define("dsg-input-button", DsgInputButton);
+export { DsgInputButton };

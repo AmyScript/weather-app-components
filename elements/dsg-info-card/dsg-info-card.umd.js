@@ -3,6 +3,7 @@
  * @license MIT, see License.md for full text.
  */
 import { LitElement, html } from "@polymer/lit-element";
+import "./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 import "@amyscript/dsg-image/dsg-image.js";
 import "@amyscript/dsg-heading/dsg-heading.js";
 import "@amyscript/dsg-text/dsg-text.js";
