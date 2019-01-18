@@ -13,7 +13,10 @@ stories.addDecorator(storybookBridge.withKnobs);
 stories.add("dsg-info-card", () => {
   var binding = {};
   // start of tag for demo
-  let elementDemo = `<dsg-info-card`;
+  let elementDemo = `<dsg-info-card cardWidth="400px"
+  heading="-11&#176;" imageUrl="http://cdn.worldweatheronline.net/images/wsymbols01_png_64/wsymbol_0004_black_low_cloud.png"
+  text="cloudy"
+  cardTitle="Toronto"`;
   // mix in properties defined on the class
   for (var key in DsgInfoCard.properties) {
     // skip prototype

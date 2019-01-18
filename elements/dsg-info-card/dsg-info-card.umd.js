@@ -1,2 +1,153 @@
-!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports,require("@polymer/lit-element"),require("@amyscript/dsg-image/dsg-image.js"),require("@amyscript/dsg-heading/dsg-heading.js"),require("@amyscript/dsg-text/dsg-text.js"),require("@amyscript/dsg-card/dsg-card.js")):"function"==typeof define&&define.amd?define(["exports","@polymer/lit-element","@amyscript/dsg-image/dsg-image.js","@amyscript/dsg-heading/dsg-heading.js","@amyscript/dsg-text/dsg-text.js","@amyscript/dsg-card/dsg-card.js"],t):t(e.DsgInfoCard={},e.litElement)}(this,function(e,t){"use strict";function n(e,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function r(e,t,r){return t&&n(e.prototype,t),r&&n(e,r),e}function i(e){return(i=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function o(e,t){return(o=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function c(e,t){return!t||"object"!=typeof t&&"function"!=typeof t?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function a(e,t,n){return(a="undefined"!=typeof Reflect&&Reflect.get?Reflect.get:function(e,t,n){var r=function(e,t){for(;!Object.prototype.hasOwnProperty.call(e,t)&&null!==(e=i(e)););return e}(e,t);if(r){var o=Object.getOwnPropertyDescriptor(r,t);return o.get?o.get.call(n):o.value}})(e,t,n||e)}function s(){var e,t,n=(e=["\n<style>:host {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  width: 100%;\n  align-items: center;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\n.card-content {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-bottom: 25px;\n}</style>\n<slot></slot>\n<dsg-card width="," height=",'>\n  <div class="card-content">\n    <dsg-image url=',"></dsg-image><dsg-heading content=","></dsg-heading>\n  </div>\n  <dsg-text content=","></dsg-text>\n</dsg-card>"],t||(t=e.slice(0)),Object.freeze(Object.defineProperties(e,{raw:{value:Object.freeze(t)}})));return s=function(){return n},n}var d=function(e){function n(){var e;return function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,n),(e=c(this,i(n).call(this))).imageUrl="",e.heading="",e.text="",e.cardHeight="100%",e.cardWidth="300px",e}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&o(e,t)}(n,t.LitElement),r(n,[{key:"render",value:function(){return t.html(s(),this.cardWidth,this.cardHeight,this.imageUrl,this.heading,this.text)}},{key:"tag",value:function(){return"dsg-info-card"}}],[{key:"properties",get:function(){return{imageUrl:{name:"imageUrl",type:"String",value:'""',reflectToAttribute:!1,observer:!1},heading:{name:"heading",type:"String",value:'""',reflectToAttribute:!1,observer:!1},text:{name:"text",type:"String",value:'""',reflectToAttribute:!1,observer:!1},cardHeight:{name:"cardHeight",type:"String",value:'""',reflectToAttribute:!1,observer:!1},cardWidth:{name:"cardWidth",type:"String",value:'""',reflectToAttribute:!1,observer:!1}}}}]),r(n,[{key:"connectedCallback",value:function(){a(i(n.prototype),"connectedCallback",this).call(this)}}]),n}();customElements.define("dsg-info-card",d),e.DsgInfoCard=d,Object.defineProperty(e,"__esModule",{value:!0})});
-//# sourceMappingURL=dsg-info-card.umd.js.map
+/**
+ * Copyright 2019 Amy
+ * @license MIT, see License.md for full text.
+ */
+import { LitElement, html } from "@polymer/lit-element";
+import "@amyscript/dsg-image/dsg-image.js";
+import "@amyscript/dsg-heading/dsg-heading.js";
+import "@amyscript/dsg-text/dsg-text.js";
+import "@amyscript/dsg-card/dsg-card.js";
+
+/**
+ * `dsg-info-card`
+ * `Combines various elements into a info card`
+ *
+ * @microcopy - language worth noting:
+ *  -
+ *
+ * @customElement
+ * @lit-html
+ * @lit-element
+ * @demo demo/index.html
+ */
+class DsgInfoCard extends LitElement {
+  
+  // render function
+  render() {
+    return html`
+<style>:host {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+:host([hidden]) {
+  display: none;
+}
+
+dsg-image {
+  padding-right: 20px;
+}
+
+.card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #DF5555;
+  padding-bottom: 15px;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}</style>
+<slot></slot>
+<dsg-card width=${this.cardWidth} height=${this.cardHeight}>
+  <div class="card-title">${this.cardTitle}</div>
+  <div class="card-content">
+    <dsg-image url=${this.imageUrl}></dsg-image><dsg-heading content=${this.heading}></dsg-heading>
+  </div>
+  <dsg-text content=${this.text}></dsg-text>
+</dsg-card>`;
+  }
+
+  // properties available to the custom element for data binding
+  static get properties() {
+    return {
+  "imageUrl": {
+    "name": "imageUrl",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "heading": {
+    "name": "heading",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "text": {
+    "name": "text",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardHeight": {
+    "name": "cardHeight",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardWidth": {
+    "name": "cardWidth",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardTitle": {
+    "name": "cardTitle",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
+  }
+
+  /**
+   * Store the tag name to make it easier to obtain directly.
+   * @notice function name must be here for tooling to operate correctly
+   */
+  tag() {
+    return "dsg-info-card";
+  }
+
+  // life cycle
+  constructor() {
+    super();
+    this.imageUrl = "";
+    this.heading = "";
+    this.text = "";
+    this.cardHeight = "100%";
+    this.cardWidth = "300px";
+    this.cardTitle = "";
+  }
+  /**
+   * life cycle, element is afixed to the DOM
+   */
+  connectedCallback() {
+    super.connectedCallback();
+  }
+  // static get observedAttributes() {
+  //   return [];
+  // }
+  // disconnectedCallback() {}
+
+  // attributeChangedCallback(attr, oldValue, newValue) {}
+}
+customElements.define("dsg-info-card", DsgInfoCard);
+export { DsgInfoCard };

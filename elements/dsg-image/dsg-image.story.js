@@ -13,7 +13,7 @@ stories.addDecorator(storybookBridge.withKnobs);
 stories.add("dsg-image", () => {
   var binding = {};
   // start of tag for demo
-  let elementDemo = `<dsg-image`;
+  let elementDemo = `<dsg-image url="http://cdn.worldweatheronline.net/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png"`;
   // mix in properties defined on the class
   for (var key in DsgImage.properties) {
     // skip prototype

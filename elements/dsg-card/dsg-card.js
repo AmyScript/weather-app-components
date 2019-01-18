@@ -2,7 +2,8 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "lit-element";
+import { LitElement, html } from "@polymer/lit-element";
+import "./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 
 /**
  * `dsg-card`
@@ -72,6 +73,8 @@ class DsgCard extends LitElement {
   // life cycle
   constructor() {
     super();
+    this.width = "300px";
+    this.height = "300px";
   }
   /**
    * life cycle, element is afixed to the DOM

@@ -44,6 +44,7 @@
     "@amyscript/dsg-heading": "^4.0.0",
     "@amyscript/dsg-image": "^4.0.0",
     "@amyscript/dsg-text": "^4.0.0",
+    "@polymer/lit-element": "^0.7.1",
     "lit-element": "^2.0.0-rc.2"
   },
   "devDependencies": {

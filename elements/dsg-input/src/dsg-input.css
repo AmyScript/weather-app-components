@@ -16,6 +16,7 @@ input {
   font-weight: bold;
   line-height: normal;
   width: ${this.width};
+  border: 1px solid lightgrey;
 }
 
 input:focus {

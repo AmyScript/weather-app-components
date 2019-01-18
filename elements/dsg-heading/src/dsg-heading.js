@@ -2,8 +2,8 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "lit-element";
-
+import { LitElement, html } from "@polymer/lit-element";
+import "./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 /**
  * `dsg-heading`
  * `Heading for info card`
@@ -45,5 +45,6 @@ class DsgHeading extends LitElement {
 
   // attributeChangedCallback(attr, oldValue, newValue) {}
 }
+
 customElements.define("dsg-heading", DsgHeading);
 export { DsgHeading };

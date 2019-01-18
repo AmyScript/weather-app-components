@@ -16,6 +16,7 @@ function umdConfig({ elementName, className } = {}) {
     plugins: [
       commonjs(),
       babel({
+        babelrc: false,
         presets: ["@babel/preset-env"],
         plugins: [
           "@babel/plugin-syntax-dynamic-import",

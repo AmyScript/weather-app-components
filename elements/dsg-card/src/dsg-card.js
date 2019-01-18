@@ -2,7 +2,8 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
-import { LitElement, html } from "lit-element";
+import { LitElement, html } from "@polymer/lit-element";
+import "./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 
 /**
  * `dsg-card`
