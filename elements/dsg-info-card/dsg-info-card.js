@@ -62,13 +62,13 @@ class DsgInfoCard extends LitElement {
         }
       </style>
       <slot></slot>
-      <dsg-card width="${this.cardWidth}" height="${this.cardHeight}">
+      <dsg-card width=${this.cardWidth} height=${this.cardHeight}>
         <div class="card-title">${this.cardTitle}</div>
         <div class="card-content">
-          <dsg-image url="${this.imageUrl}"></dsg-image
-          ><dsg-heading content="${this.heading}"></dsg-heading>
+          <dsg-image url=${this.imageUrl}></dsg-image
+          ><dsg-heading content=${this.heading}></dsg-heading>
         </div>
-        <dsg-text content="${this.text}"></dsg-text>
+        <dsg-text content=${this.text}></dsg-text>
       </dsg-card>
     `;
   }

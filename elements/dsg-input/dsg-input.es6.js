@@ -11,13 +11,15 @@ input {
   background: #FFFFFF;
   border-radius: 20px;
   border-style: none;
-  font-size: 25px;
+  font-size: 15px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
   width: ${this.width};
   border: 1px solid lightgrey;
+  padding: 5px;
+  padding-left: 10px;
 }
 
 input:focus {
