@@ -16,7 +16,7 @@
       "hax": "src/dsg-info-card-hax.json"
     }
   },
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "Combines various elements into a info card",
   "repository": {
     "type": "git",
@@ -40,10 +40,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@amyscript/dsg-card": "^5.1.0",
-    "@amyscript/dsg-heading": "^5.1.0",
-    "@amyscript/dsg-image": "^5.1.0",
-    "@amyscript/dsg-text": "^5.1.0",
+    "@amyscript/dsg-card": "^5.2.0",
+    "@amyscript/dsg-heading": "^5.2.0",
+    "@amyscript/dsg-image": "^5.2.0",
+    "@amyscript/dsg-text": "^5.2.0",
     "@polymer/lit-element": "^0.7.1",
     "lit-element": "^2.0.0-rc.2"
   },
