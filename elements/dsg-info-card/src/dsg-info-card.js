@@ -4,6 +4,7 @@
  */
 import { LitElement, html } from "@polymer/lit-element";
 import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
+
 import "@amyscript/dsg-image/dsg-image.js";
 import "@amyscript/dsg-heading/dsg-heading.js";
 import "@amyscript/dsg-text/dsg-text.js";
