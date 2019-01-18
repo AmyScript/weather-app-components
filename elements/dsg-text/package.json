@@ -16,7 +16,7 @@
       "hax": "src/dsg-text-hax.json"
     }
   },
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Text content for info card",
   "repository": {
     "type": "git",
