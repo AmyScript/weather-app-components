@@ -6,13 +6,13 @@ define([
   "use strict";
   Object.defineProperty(_exports, "__esModule", { value: !0 });
   _exports.DsgCard = void 0;
-  function _templateObject_e301f9a01b4d11e9848eb5b4b7c43574() {
+  function _templateObject_8e3931701b4f11e9b5b577123925f5ad() {
     var data = babelHelpers.taggedTemplateLiteral([
       "\n<style>\n:host { \n  box-sizing: border-box;\n  width: ",
       ";\n  height: ",
       ";\n  border-radius: 20px;\n  padding: 30px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: white;\n  border: 1px solid lightgrey;\n}\n:host([hidden]) { display: none; }\n</style>\n<slot></slot>\n<div>\n  <slot></slot>\n</div>"
     ]);
-    _templateObject_e301f9a01b4d11e9848eb5b4b7c43574 = function _templateObject_e301f9a01b4d11e9848eb5b4b7c43574() {
+    _templateObject_8e3931701b4f11e9b5b577123925f5ad = function _templateObject_8e3931701b4f11e9b5b577123925f5ad() {
       return data;
     };
     return data;
@@ -26,7 +26,7 @@ define([
           key: "render",
           value: function render() {
             return (0, _litElement.html)(
-              _templateObject_e301f9a01b4d11e9848eb5b4b7c43574(),
+              _templateObject_8e3931701b4f11e9b5b577123925f5ad(),
               this.width,
               this.height
             );

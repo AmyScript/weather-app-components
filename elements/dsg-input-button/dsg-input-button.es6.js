@@ -1,4 +1,4 @@
-import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";class DsgInputButton extends LitElement{render(){return html`
+import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";import"./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgInputButton extends LitElement{render(){return html`
 <style>:host {
   display: block;
 }

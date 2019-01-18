@@ -3,7 +3,7 @@
  * @license MIT, see License.md for full text.
  */
 import { LitElement, html } from "@polymer/lit-element";
-import "./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
+import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 /**
  * `dsg-heading`
  * `Heading for info card`

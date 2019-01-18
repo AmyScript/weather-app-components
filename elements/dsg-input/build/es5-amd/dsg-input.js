@@ -6,7 +6,7 @@ define([
   "use strict";
   Object.defineProperty(_exports, "__esModule", { value: !0 });
   _exports.DsgInput = void 0;
-  function _templateObject_ef2ebc401b4d11e9befabbe2183bf35f() {
+  function _templateObject_999202401b4f11e9acb4e322850ccda6() {
     var data = babelHelpers.taggedTemplateLiteral([
       "\n<style>:host {\n  display: block;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\ninput {\n  background: #FFFFFF;\n  border-radius: 20px;\n  border-style: none;\n  font-size: 25px;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  width: ",
       ";\n  border: 1px solid lightgrey;\n}\n\ninput:focus {\n  outline: none;\n}</style>\n<input\n  id=",
@@ -14,7 +14,7 @@ define([
       "\n  @input=",
       "\n/>"
     ]);
-    _templateObject_ef2ebc401b4d11e9befabbe2183bf35f = function _templateObject_ef2ebc401b4d11e9befabbe2183bf35f() {
+    _templateObject_999202401b4f11e9acb4e322850ccda6 = function _templateObject_999202401b4f11e9acb4e322850ccda6() {
       return data;
     };
     return data;
@@ -28,7 +28,7 @@ define([
           key: "render",
           value: function render() {
             return (0, _litElement.html)(
-              _templateObject_ef2ebc401b4d11e9befabbe2183bf35f(),
+              _templateObject_999202401b4f11e9acb4e322850ccda6(),
               this.width,
               this.inputId,
               this.city,

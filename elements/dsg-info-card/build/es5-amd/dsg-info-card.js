@@ -18,7 +18,7 @@ define([
   "use strict";
   Object.defineProperty(_exports, "__esModule", { value: !0 });
   _exports.DsgInfoCard = void 0;
-  function _templateObject_f92899501b4d11e99a8117eaa7bab254() {
+  function _templateObject_a41078a01b4f11e9b626533a7879c1c7() {
     var data = babelHelpers.taggedTemplateLiteral([
       "\n<style>:host {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  width: 100%;\n  align-items: center;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\ndsg-image {\n  padding-right: 20px;\n}\n\n.card-title {\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 24px;\n  text-align: center;\n  color: #DF5555;\n  padding-bottom: 15px;\n}\n\n.card-content {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-bottom: 25px;\n}</style>\n<slot></slot>\n<dsg-card width=",
       " height=",
@@ -28,7 +28,7 @@ define([
       "></dsg-heading>\n  </div>\n  <dsg-text content=",
       "></dsg-text>\n</dsg-card>"
     ]);
-    _templateObject_f92899501b4d11e99a8117eaa7bab254 = function _templateObject_f92899501b4d11e99a8117eaa7bab254() {
+    _templateObject_a41078a01b4f11e9b626533a7879c1c7 = function _templateObject_a41078a01b4f11e9b626533a7879c1c7() {
       return data;
     };
     return data;
@@ -42,7 +42,7 @@ define([
           key: "render",
           value: function render() {
             return (0, _litElement.html)(
-              _templateObject_f92899501b4d11e99a8117eaa7bab254(),
+              _templateObject_a41078a01b4f11e9b626533a7879c1c7(),
               this.cardWidth,
               this.cardHeight,
               this.cardTitle,

@@ -1,17 +1,18 @@
 define([
   "exports",
-  "./node_modules/@polymer/lit-element/lit-element.js"
-], function(_exports, _litElement) {
+  "./node_modules/@polymer/lit-element/lit-element.js",
+  "./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"
+], function(_exports, _litElement, _customElementsEs5Adapter) {
   "use strict";
   Object.defineProperty(_exports, "__esModule", { value: !0 });
   _exports.DsgInputButton = void 0;
-  function _templateObject_e30f19001b4d11e98801a3d512802d3e() {
+  function _templateObject_8e4bf6201b4f11e9835bffe1f5a2512b() {
     var data = babelHelpers.taggedTemplateLiteral([
       "\n<style>:host {\n  display: block;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\nbutton {\n  width: 23px;\n  height: 23px;\n  border-radius: 50%;\n  background-color: #DF5555;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: none;\n  padding: 0px;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 14px;\n}</style>\n<button id=",
       ' @click="',
       '">+</button>'
     ]);
-    _templateObject_e30f19001b4d11e98801a3d512802d3e = function _templateObject_e30f19001b4d11e98801a3d512802d3e() {
+    _templateObject_8e4bf6201b4f11e9835bffe1f5a2512b = function _templateObject_8e4bf6201b4f11e9835bffe1f5a2512b() {
       return data;
     };
     return data;
@@ -25,7 +26,7 @@ define([
           key: "render",
           value: function render() {
             return (0, _litElement.html)(
-              _templateObject_e30f19001b4d11e98801a3d512802d3e(),
+              _templateObject_8e4bf6201b4f11e9835bffe1f5a2512b(),
               this.buttonId,
               this.onClick
             );
