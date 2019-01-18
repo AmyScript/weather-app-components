@@ -109,6 +109,8 @@
     "yo": "2.0.5"
   },
   "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
     "@open-wc/webpack": "^0.1.4",
     "@polymer/lit-element": "^0.7.1",
     "@polymer/polymer": "3.1.0",

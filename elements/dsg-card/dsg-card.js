@@ -32,6 +32,7 @@ class DsgCard extends LitElement {
           flex-direction: column;
           align-items: center;
           background-color: white;
+          border: 1px solid lightgrey;
         }
         :host([hidden]) {
           display: none;
@@ -73,8 +74,6 @@ class DsgCard extends LitElement {
   // life cycle
   constructor() {
     super();
-    this.width = "300px";
-    this.height = "300px";
   }
   /**
    * life cycle, element is afixed to the DOM

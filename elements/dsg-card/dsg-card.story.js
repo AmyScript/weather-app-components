@@ -13,7 +13,7 @@ stories.addDecorator(storybookBridge.withKnobs);
 stories.add("dsg-card", () => {
   var binding = {};
   // start of tag for demo
-  let elementDemo = `<dsg-card`;
+  let elementDemo = `<dsg-card width="300px" height="300px"`;
   // mix in properties defined on the class
   for (var key in DsgCard.properties) {
     // skip prototype
