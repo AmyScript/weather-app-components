@@ -6,12 +6,12 @@ define([
   "use strict";
   Object.defineProperty(_exports, "__esModule", { value: !0 });
   _exports.DsgText = void 0;
-  function _templateObject_365b53501b4c11e9a23549c45ea8664a() {
+  function _templateObject_ef31c9801b4d11e9938eb33f38ed4ace() {
     var data = babelHelpers.taggedTemplateLiteral([
       "\n<style>:host { \n  display: block; \n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 14px;\n  text-align: center;\n  color: #959595;\n  }\n:host([hidden]) { display: none; }</style>\n<slot></slot>\n<div>",
       "</div>"
     ]);
-    _templateObject_365b53501b4c11e9a23549c45ea8664a = function _templateObject_365b53501b4c11e9a23549c45ea8664a() {
+    _templateObject_ef31c9801b4d11e9938eb33f38ed4ace = function _templateObject_ef31c9801b4d11e9938eb33f38ed4ace() {
       return data;
     };
     return data;
@@ -25,7 +25,7 @@ define([
           key: "render",
           value: function render() {
             return (0, _litElement.html)(
-              _templateObject_365b53501b4c11e9a23549c45ea8664a(),
+              _templateObject_ef31c9801b4d11e9938eb33f38ed4ace(),
               this.content
             );
           }

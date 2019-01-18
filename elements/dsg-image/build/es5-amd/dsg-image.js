@@ -6,12 +6,12 @@ define([
   "use strict";
   Object.defineProperty(_exports, "__esModule", { value: !0 });
   _exports.DsgImage = void 0;
-  function _templateObject_2b2637201b4c11e992eef9fa09221748() {
+  function _templateObject_e2fe50201b4d11e9a0c0f5c77d159739() {
     var data = babelHelpers.taggedTemplateLiteral([
       "\n<style>:host { \n  display: flex; \n  justify-content: center;\n  }\n  img {\n    border-radius: 50%;\n    border: 2px solid #E8E8E8;\n  }\n:host([hidden]) { display: none; }</style>\n<div>\n  <img\n    src=",
       "\n  />\n</div>"
     ]);
-    _templateObject_2b2637201b4c11e992eef9fa09221748 = function _templateObject_2b2637201b4c11e992eef9fa09221748() {
+    _templateObject_e2fe50201b4d11e9a0c0f5c77d159739 = function _templateObject_e2fe50201b4d11e9a0c0f5c77d159739() {
       return data;
     };
     return data;
@@ -25,7 +25,7 @@ define([
           key: "render",
           value: function render() {
             return (0, _litElement.html)(
-              _templateObject_2b2637201b4c11e992eef9fa09221748(),
+              _templateObject_e2fe50201b4d11e9a0c0f5c77d159739(),
               this.url
             );
           }

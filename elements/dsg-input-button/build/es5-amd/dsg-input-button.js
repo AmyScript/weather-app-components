@@ -5,13 +5,13 @@ define([
   "use strict";
   Object.defineProperty(_exports, "__esModule", { value: !0 });
   _exports.DsgInputButton = void 0;
-  function _templateObject_2b2992801b4c11e991a671ddf9494415() {
+  function _templateObject_e30f19001b4d11e98801a3d512802d3e() {
     var data = babelHelpers.taggedTemplateLiteral([
       "\n<style>:host {\n  display: block;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\nbutton {\n  width: 23px;\n  height: 23px;\n  border-radius: 50%;\n  background-color: #DF5555;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: none;\n  padding: 0px;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 14px;\n}</style>\n<button id=",
       ' @click="',
       '">+</button>'
     ]);
-    _templateObject_2b2992801b4c11e991a671ddf9494415 = function _templateObject_2b2992801b4c11e991a671ddf9494415() {
+    _templateObject_e30f19001b4d11e98801a3d512802d3e = function _templateObject_e30f19001b4d11e98801a3d512802d3e() {
       return data;
     };
     return data;
@@ -25,7 +25,7 @@ define([
           key: "render",
           value: function render() {
             return (0, _litElement.html)(
-              _templateObject_2b2992801b4c11e991a671ddf9494415(),
+              _templateObject_e30f19001b4d11e98801a3d512802d3e(),
               this.buttonId,
               this.onClick
             );
