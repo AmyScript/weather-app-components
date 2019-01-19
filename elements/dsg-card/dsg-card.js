@@ -29,7 +29,7 @@ class DsgCard extends LitElement {
           width: ${this.width};
           height: ${this.height};
           border-radius: 20px;
-          padding: 35px;
+          padding: 30px;
           display: flex;
           flex-direction: column;
           align-items: center;

@@ -1,12 +1,12 @@
-import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";import"./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgHeading extends LitElement{render(){return html`
-<style>:host { 
+import{LitElement,html}from"@polymer/lit-element/lit-element.js";import"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgHeading extends LitElement{render(){return html`
+<style>:host {
   display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
   font-size: 64px;
-  color: #000000; 
+  color: #000000;
   margin: 0px;
 }
 :host([hidden]) { display: none; }
