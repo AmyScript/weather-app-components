@@ -4,6 +4,7 @@
  */
 import { LitElement, html } from "@polymer/lit-element";
 import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
+
 /**
  * `dsg-heading`
  * `Heading for info card`

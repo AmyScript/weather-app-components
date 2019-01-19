@@ -2,7 +2,9 @@
  * Copyright 2019 Amy
  * @license MIT, see License.md for full text.
  */
+
 import { LitElement, html } from "@polymer/lit-element";
+
 import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 
 /**
@@ -10,7 +12,7 @@ import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
  * `Card for info card`
  *
  * @microcopy - language worth noting:
- *  -
+ *
  *
  * @customElement
  * @lit-html

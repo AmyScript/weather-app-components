@@ -48,7 +48,7 @@ class DsgInputButton extends LitElement {
           font-size: 14px;
         }
       </style>
-      <button id=${this.buttonId} @click="${this.onClick}">+</button>
+      <button id="${this.buttonId}" @click="${this.onClick}">+</button>
     `;
   }
 

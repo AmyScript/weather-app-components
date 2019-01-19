@@ -11,7 +11,7 @@ import "@amyscript/dsg-text/dsg-text.js";
 import "@amyscript/dsg-card/dsg-card.js";
 
 /**
- * `dsg-info-card`
+ * `dsg-info-card`s
  * `Combines various elements into a info card`
  *
  * @microcopy - language worth noting:

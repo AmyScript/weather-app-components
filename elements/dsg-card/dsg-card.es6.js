@@ -5,7 +5,7 @@ import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";
   width: ${this.width};
   height: ${this.height};
   border-radius: 20px;
-  padding: 30px;
+  padding: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;

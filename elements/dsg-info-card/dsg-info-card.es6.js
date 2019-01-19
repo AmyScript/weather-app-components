@@ -1,4 +1,4 @@
-import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";import"./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";import"./node_modules/@amyscript/dsg-image/dsg-image.js";import"./node_modules/@amyscript/dsg-heading/dsg-heading.js";import"./node_modules/@amyscript/dsg-text/dsg-text.js";import"./node_modules/@amyscript/dsg-card/dsg-card.js";class DsgInfoCard extends LitElement{render(){return html`
+import{LitElement,html}from"@polymer/lit-element";import"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";import"@amyscript/dsg-image/dsg-image.js";import"@amyscript/dsg-heading/dsg-heading.js";import"@amyscript/dsg-text/dsg-text.js";import"@amyscript/dsg-card/dsg-card.js";class DsgInfoCard extends LitElement{render(){return html`
 <style>:host {
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@ import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";
 }
 
 dsg-image {
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .card-title {

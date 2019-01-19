@@ -50,10 +50,10 @@ class DsgInput extends LitElement {
         }
       </style>
       <input
-        id=${this.inputId}
+        id="${this.inputId}"
         type="text"
-        value=${this.city}
-        @input=${this.handleInput}
+        value="${this.city}"
+        @input="${this.handleInput}"
       />
     `;
   }
