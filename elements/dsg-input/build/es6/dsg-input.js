@@ -1,24 +1,9 @@
-/**
- * Copyright 2019 Amy
- * @license MIT, see License.md for full text.
- */
-import { LitElement, html } from "@polymer/lit-element";
-import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
-
-/**
- * `dsg-input`
- * `input element `
- *
- * @microcopy - language worth noting:
- *  -
- *
- * @customElement
- * @lit-html
- * @lit-element
- * @demo demo/index.html
- */
+import {
+  LitElement,
+  html
+} from "./node_modules/@polymer/lit-element/lit-element.js";
+import "./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
 class DsgInput extends LitElement {
-  // render function
   render() {
     return html`
       <style>
@@ -57,61 +42,47 @@ class DsgInput extends LitElement {
       />
     `;
   }
-
-  // properties available to the custom element for data binding
   static get properties() {
     return {
       city: {
         name: "city",
         type: "String",
         value: " ",
-        reflect: true,
+        reflect: !0,
         attribute: "value",
-        observer: false
+        observer: !1
       },
       inputId: {
         name: "inputId",
         type: "String",
         value: " ",
-        reflectToAttribute: false,
-        observer: false
+        reflectToAttribute: !1,
+        observer: !1
       },
       width: {
         name: "width",
         type: "String",
         value: " ",
-        reflectToAttribute: false,
-        observer: false
+        reflectToAttribute: !1,
+        observer: !1
       }
     };
   }
-
-  /**
-   * Store the tag name to make it easier to obtain directly.
-   * @notice function name must be here for tooling to operate correctly
-   */
   tag() {
     return "dsg-input";
   }
-
-  // life cycle
   constructor() {
     super();
     this.city = "";
     this.inputId = "";
     this.width = "100%";
   }
-
   handleInput(e) {
     this.city = e.target.value;
   }
-  /**
-   * life cycle, element is afixed to the DOM
-   */
   connectedCallback() {
     super.connectedCallback();
   }
-
   attributeChangedCallback(name, oldval, newval) {
     super.attributeChangedCallback(name, oldval, newval);
   }

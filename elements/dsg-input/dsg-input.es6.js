@@ -1,4 +1,4 @@
-import{LitElement,html}from"@polymer/lit-element/lit-element.js";import"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgInput extends LitElement{render(){return html`
+import{LitElement,html}from"./node_modules/@polymer/lit-element/lit-element.js";import"./node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgInput extends LitElement{render(){return html`
 <style>:host {
   display: block;
 }
@@ -30,4 +30,4 @@ input:focus {
   type="text"
   value=${this.city}
   @input=${this.handleInput}
-/>`}static get properties(){return{city:{name:"city",type:"String",value:" ",reflectToAttribute:!1,observer:!1},inputId:{name:"inputId",type:"String",value:" ",reflectToAttribute:!1,observer:!1},width:{name:"width",type:"String",value:" ",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super();this.city="";this.inputId="";this.width="100%"}handleInput(e){this.city=e.target.value}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input",DsgInput);export{DsgInput};
+/>`}static get properties(){return{city:{name:"city",type:"String",value:" ",reflect:!0,attribute:"value",observer:!1},inputId:{name:"inputId",type:"String",value:" ",reflectToAttribute:!1,observer:!1},width:{name:"width",type:"String",value:" ",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input"}constructor(){super();this.city="";this.inputId="";this.width="100%"}handleInput(e){this.city=e.target.value}connectedCallback(){super.connectedCallback()}attributeChangedCallback(name,oldval,newval){super.attributeChangedCallback(name,oldval,newval)}}customElements.define("dsg-input",DsgInput);export{DsgInput};

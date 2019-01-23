@@ -45,12 +45,10 @@ class DsgInput extends LitElement {
   connectedCallback() {
     super.connectedCallback();
   }
-  // static get observedAttributes() {
-  //   return [];
-  // }
-  // disconnectedCallback() {}
 
-  // attributeChangedCallback(attr, oldValue, newValue) {}
+  attributeChangedCallback(name, oldval, newval) {
+    super.attributeChangedCallback(name, oldval, newval);
+  }
 }
 customElements.define("dsg-input", DsgInput);
 export { DsgInput };

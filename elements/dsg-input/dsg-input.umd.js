@@ -63,7 +63,8 @@ input:focus {
     "name": "city",
     "type": "String",
     "value": " ",
-    "reflectToAttribute": false,
+    "reflect": true,
+    "attribute": "value",
     "observer": false
   },
   "inputId": {
@@ -109,12 +110,10 @@ input:focus {
   connectedCallback() {
     super.connectedCallback();
   }
-  // static get observedAttributes() {
-  //   return [];
-  // }
-  // disconnectedCallback() {}
 
-  // attributeChangedCallback(attr, oldValue, newValue) {}
+  attributeChangedCallback(name, oldval, newval) {
+    super.attributeChangedCallback(name, oldval, newval);
+  }
 }
 customElements.define("dsg-input", DsgInput);
 export { DsgInput };

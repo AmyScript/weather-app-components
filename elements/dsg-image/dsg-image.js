@@ -34,7 +34,7 @@ class DsgImage extends LitElement {
           display: none;
         }
       </style>
-      <div><img src="${this.url}" /></div>
+      <div><img src=${this.url} /></div>
     `;
   }
 

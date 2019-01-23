@@ -3,7 +3,8 @@
     "name": "city",
     "type": "String",
     "value": " ",
-    "reflectToAttribute": false,
+    "reflect": true,
+    "attribute": "value",
     "observer": false
   },
   "inputId": {
