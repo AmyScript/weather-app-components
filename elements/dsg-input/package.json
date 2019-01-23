@@ -16,7 +16,7 @@
       "hax": "src/dsg-input-hax.json"
     }
   },
-  "version": "5.3.2",
+  "version": "6.0.0",
   "description": "input element ",
   "repository": {
     "type": "git",
