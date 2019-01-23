@@ -39,7 +39,7 @@
       "addServiceWorker": false
     }
   ],
-  "moduleResolution": "node",
+  "moduleResolution": "none",
   "npm": true,
   "lint": {
     "rules": ["polymer-3"]
