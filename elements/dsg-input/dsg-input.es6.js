@@ -5,6 +5,7 @@ import{LitElement,html}from"@polymer/lit-element";import"@webcomponents/webcompo
 
 :host([hidden]) {
   display: none;
+  box-sizing: border-box;
 }
 
 input {
@@ -20,6 +21,7 @@ input {
   border: 1px solid lightgrey;
   padding: 5px;
   padding-left: 10px;
+  box-sizing: inherit;
 }
 
 input:focus {

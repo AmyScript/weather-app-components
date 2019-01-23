@@ -28,6 +28,7 @@ class DsgInput extends LitElement {
 
 :host([hidden]) {
   display: none;
+  box-sizing: border-box;
 }
 
 input {
@@ -43,6 +44,7 @@ input {
   border: 1px solid lightgrey;
   padding: 5px;
   padding-left: 10px;
+  box-sizing: inherit;
 }
 
 input:focus {
