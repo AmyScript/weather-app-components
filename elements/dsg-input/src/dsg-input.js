@@ -31,13 +31,13 @@ class DsgInput extends LitElement {
   // life cycle
   constructor() {
     super();
-    this.city = "";
+    this.cityProp = "";
     this.inputId = "";
     this.width = "100%";
   }
 
   handleInput(e) {
-    this.city = e.target.value;
+    this.cityProp = e.target.value;
   }
   /**
    * life cycle, element is afixed to the DOM

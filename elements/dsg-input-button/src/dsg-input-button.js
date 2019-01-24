@@ -47,7 +47,6 @@ class DsgInputButton extends LitElement {
     });
     this.dispatchEvent(event);
     this.buttonFunction();
-    console.log("clicked" + this.id);
   }
   /**
    * life cycle, element is afixed to the DOM

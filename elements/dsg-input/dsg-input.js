@@ -54,7 +54,7 @@ class DsgInput extends LitElement {
       <input
         id=${this.inputId}
         type="text"
-        value=${this.city}
+        .value=${this.city}
         @input=${this.handleInput}
       />
     `;
@@ -63,12 +63,12 @@ class DsgInput extends LitElement {
   // properties available to the custom element for data binding
   static get properties() {
     return {
-      city: {
-        name: "city",
+      cityProp: {
+        name: "cityProp",
         type: "String",
         value: " ",
         reflect: true,
-        attribute: "value",
+        attribute: true,
         observer: false
       },
       inputId: {
@@ -99,13 +99,13 @@ class DsgInput extends LitElement {
   // life cycle
   constructor() {
     super();
-    this.city = "";
+    this.cityProp = "";
     this.inputId = "";
     this.width = "100%";
   }
 
   handleInput(e) {
-    this.city = e.target.value;
+    this.cityProp = e.target.value;
   }
   /**
    * life cycle, element is afixed to the DOM
