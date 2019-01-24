@@ -54,7 +54,7 @@ class DsgInput extends LitElement {
       <input
         id=${this.inputId}
         type="text"
-        .value=${this.city}
+        .value=${this.cityProp}
         @input=${this.handleInput}
       />
     `;
