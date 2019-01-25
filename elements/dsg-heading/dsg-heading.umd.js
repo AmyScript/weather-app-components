@@ -1,2 +1,84 @@
-!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports,require("@polymer/lit-element"),require("@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js")):"function"==typeof define&&define.amd?define(["exports","@polymer/lit-element","@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"],t):t(e.DsgHeading={},e.litElement)}(this,function(e,t){"use strict";function n(e,t){for(var n=0;n<t.length;n++){var o=t[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,o.key,o)}}function o(e,t,o){return t&&n(e.prototype,t),o&&n(e,o),e}function r(e){return(r=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}function i(e,t){return(i=Object.setPrototypeOf||function(e,t){return e.__proto__=t,e})(e,t)}function c(e,t){return!t||"object"!=typeof t&&"function"!=typeof t?function(e){if(void 0===e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return e}(e):t}function u(e,t,n){return(u="undefined"!=typeof Reflect&&Reflect.get?Reflect.get:function(e,t,n){var o=function(e,t){for(;!Object.prototype.hasOwnProperty.call(e,t)&&null!==(e=r(e)););return e}(e,t);if(o){var i=Object.getOwnPropertyDescriptor(o,t);return i.get?i.get.call(n):i.value}})(e,t,n||e)}function l(){var e,t,n=(e=["\n<style>:host { \n  display: block;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 64px;\n  color: #000000; \n  margin: 0px;\n}\n:host([hidden]) { display: none; }\nh3 {\n  margin: 0;\n}</style>\n<slot></slot>\n<div>","</div>"],t||(t=e.slice(0)),Object.freeze(Object.defineProperties(e,{raw:{value:Object.freeze(t)}})));return l=function(){return n},n}var f=function(e){function n(){var e;return function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,n),(e=c(this,r(n).call(this))).content="",e}return function(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function");e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,writable:!0,configurable:!0}}),t&&i(e,t)}(n,t.LitElement),o(n,[{key:"render",value:function(){return t.html(l(),this.content)}},{key:"tag",value:function(){return"dsg-heading"}}],[{key:"properties",get:function(){return{content:{name:"content",type:"String",value:"",reflectToAttribute:!1,observer:!1}}}}]),o(n,[{key:"connectedCallback",value:function(){u(r(n.prototype),"connectedCallback",this).call(this)}}]),n}();customElements.define("dsg-heading",f),e.DsgHeading=f,Object.defineProperty(e,"__esModule",{value:!0})});
-//# sourceMappingURL=dsg-heading.umd.js.map
+/**
+ * Copyright 2019 Amy
+ * @license MIT, see License.md for full text.
+ */
+import {LitElement, html} from 'lit-element';
+
+/**
+ * `dsg-heading`
+ * `Heading for info card`
+ *
+ * @microcopy - language worth noting:
+ *  -
+ *
+ * @customElement
+ * @lit-html
+ * @lit-element
+ * @demo demo/index.html
+ */
+class DsgHeading extends LitElement {
+  
+  // render function
+  render() {
+    return html`
+<style>:host { 
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 64px;
+  color: #000000; 
+  margin: 0px;
+}
+:host([hidden]) { display: none; }
+h3 {
+  margin: 0;
+}</style>
+<slot></slot>
+<div>${this.content}</div>`;
+  }
+
+  // properties available to the custom element for data binding
+  static get properties() {
+    return {
+  "content": {
+    "name": "content",
+    "type": "String",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
+  }
+
+  /**
+   * Store the tag name to make it easier to obtain directly.
+   * @notice function name must be here for tooling to operate correctly
+   */
+  tag() {
+    return "dsg-heading";
+  }
+
+  // life cycle
+  constructor() {
+    super();
+    this.content = "";
+  }
+  /**
+   * life cycle, element is afixed to the DOM
+   */
+  connectedCallback() {
+    super.connectedCallback();
+  }
+  // static get observedAttributes() {
+  //   return [];
+  // }
+  // disconnectedCallback() {}
+
+  // attributeChangedCallback(attr, oldValue, newValue) {}
+}
+
+customElements.define("dsg-heading", DsgHeading);
+export { DsgHeading };
