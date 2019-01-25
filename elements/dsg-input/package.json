@@ -41,8 +41,7 @@
   "license": "MIT",
   "dependencies": {
     "@lrnwebcomponents/deduping-fix": "^0.2.0",
-    "@polymer/lit-element": "^0.7.1",
-    "lit-element": "^2.0.0-rc.2",
+    "lit-element": "^2.0.0-rc.5",
     "rollup-plugin-delete": "^0.1.2"
   },
   "devDependencies": {
