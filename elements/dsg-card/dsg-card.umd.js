@@ -3,7 +3,7 @@
  * @license MIT, see License.md for full text.
  */
 
-import {LitElement, html} from 'lit-element';
+import { LitElement, html } from "lit-element";
 
 /**
  * `dsg-card`
@@ -18,12 +18,12 @@ import {LitElement, html} from 'lit-element';
  * @demo demo/index.html
  */
 class DsgCard extends LitElement {
-
+  
   // render function
   render() {
     return html`
 <style>
-:host {
+:host { 
   box-sizing: border-box;
   width: ${this.width};
   height: ${this.height};
@@ -82,12 +82,6 @@ class DsgCard extends LitElement {
   connectedCallback() {
     super.connectedCallback();
   }
-  // static get observedAttributes() {
-  //   return [];
-  // }
-  // disconnectedCallback() {}
-
-  // attributeChangedCallback(attr, oldValue, newValue) {}
 }
 customElements.define("dsg-card", DsgCard);
 export { DsgCard };
