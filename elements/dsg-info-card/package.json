@@ -44,8 +44,7 @@
     "@amyscript/dsg-heading": "^7.0.0",
     "@amyscript/dsg-image": "^7.0.0",
     "@amyscript/dsg-text": "^7.0.0",
-    "@polymer/lit-element": "^0.7.1",
-    "lit-element": "^2.0.0-rc.2"
+    "lit-element": "^2.0.0-rc.5"
   },
   "devDependencies": {
     "@lrnwebcomponents/deduping-fix": "0.0.35",
