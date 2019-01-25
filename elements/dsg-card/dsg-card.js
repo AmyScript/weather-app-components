@@ -3,9 +3,7 @@
  * @license MIT, see License.md for full text.
  */
 
-import { LitElement, html } from "@polymer/lit-element";
-
-import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";
+import { LitElement, html } from "lit-element";
 
 /**
  * `dsg-card`
@@ -83,12 +81,6 @@ class DsgCard extends LitElement {
   connectedCallback() {
     super.connectedCallback();
   }
-  // static get observedAttributes() {
-  //   return [];
-  // }
-  // disconnectedCallback() {}
-
-  // attributeChangedCallback(attr, oldValue, newValue) {}
 }
 customElements.define("dsg-card", DsgCard);
 export { DsgCard };
