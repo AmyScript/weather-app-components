@@ -83,6 +83,8 @@ Then open the URL that will be printed in the terminal. It looks something like 
 
 We've added [Storybook](https://storybook.js.org/) to weather-app as a way to preview our web components as they are being developed. We'll also use Storybook to export a static site that will be the demo site for weather-app.
 
+If you update a component or add a component, ensure you run lerna build and lerna publish before you run storybook so that lerna can sym link the node modules properly for the storybook bundle.
+
 To run storybook
 
 ```bash
