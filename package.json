@@ -37,10 +37,10 @@
     "new": "yarn run rebuild-wcfcache && wcf element && yarn run test-suite-inject && yarn install --link-duplicates"
   },
   "devDependencies": {
-    "@amyscript/dsg-card": "^4.0.0",
-    "@amyscript/dsg-heading": "^4.0.0",
-    "@amyscript/dsg-image": "^4.0.0",
-    "@amyscript/dsg-text": "^4.0.0",
+    "@amyscript/dsg-card": "^8.0.0",
+    "@amyscript/dsg-heading": "^8.0.0",
+    "@amyscript/dsg-image": "^8.0.0",
+    "@amyscript/dsg-text": "^8.0.0",
     "@babel/core": "7.1.5",
     "@babel/preset-env": "7.1.5",
     "@emotion/styled-base": "^0.10.6",
