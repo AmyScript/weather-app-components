@@ -16,7 +16,7 @@
       "hax": "src/dsg-image-hax.json"
     }
   },
-  "version": "7.0.0",
+  "version": "8.0.0",
   "description": "image for info card",
   "repository": {
     "type": "git",
