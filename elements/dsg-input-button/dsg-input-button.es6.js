@@ -1,4 +1,4 @@
-import{LitElement,html}from"@polymer/lit-element/lit-element.js";import"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgInputButton extends LitElement{render(){return html`
+import{LitElement,html}from"lit-element";class DsgInputButton extends LitElement{render(){return html`
 <style>:host {
   display: block;
 }
@@ -24,4 +24,4 @@ button {
   line-height: normal;
   font-size: 14px;
 }</style>
-<button id=${this.buttonId} @click="${this.onClick}">+</button>`}static get properties(){return{buttonId:{name:"buttonId",type:"String",value:"",reflectToAttribute:!1,observer:!1},buttonFunction:{name:"buttonFunction",type:"Object",value:"",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input-button"}constructor(){super();this.buttonId="";this.buttonFunction=()=>console.log("hello there")}onClick(){const event=new CustomEvent("buttonClicked",{detail:{button:this.buttonId},bubbles:!0});this.dispatchEvent(event);this.buttonFunction();console.log("clicked"+this.id)}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input-button",DsgInputButton);export{DsgInputButton};
+<button id=${this.buttonId} @click="${this.onClick}">+</button>`}static get properties(){return{buttonId:{name:"buttonId",type:"String",value:"",reflectToAttribute:!1,observer:!1},buttonFunction:{name:"buttonFunction",type:"Object",value:"",reflectToAttribute:!1,observer:!1}}}tag(){return"dsg-input-button"}constructor(){super();this.buttonId="";this.buttonFunction=()=>console.log("hello there")}onClick(){const event=new CustomEvent("buttonClicked",{detail:{button:this.buttonId},bubbles:!0});this.dispatchEvent(event);this.buttonFunction()}connectedCallback(){super.connectedCallback()}}customElements.define("dsg-input-button",DsgInputButton);export{DsgInputButton};

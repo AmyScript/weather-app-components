@@ -1,6 +1,6 @@
-import{LitElement,html}from"@polymer/lit-element/lit-element.js";import"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgImage extends LitElement{render(){return html`
-<style>:host {
-  display: flex;
+import{LitElement,html}from"lit-element";class DsgImage extends LitElement{render(){return html`
+<style>:host { 
+  display: flex; 
   justify-content: center;
   }
   img {

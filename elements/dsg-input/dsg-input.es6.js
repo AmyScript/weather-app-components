@@ -1,4 +1,4 @@
-import{LitElement,html}from"@polymer/lit-element";import"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";class DsgInput extends LitElement{render(){return html`
+import{LitElement,html}from"lit-element";class DsgInput extends LitElement{render(){return html`
 <style>:host {
   display: block;
 }

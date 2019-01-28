@@ -1,4 +1,4 @@
-import{LitElement,html}from"@polymer/lit-element";import"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js";import"@amyscript/dsg-image/dsg-image.js";import"@amyscript/dsg-heading/dsg-heading.js";import"@amyscript/dsg-text/dsg-text.js";import"@amyscript/dsg-card/dsg-card.js";class DsgInfoCard extends LitElement{render(){return html`
+import{LitElement,html}from"lit-element";import"@amyscript/dsg-image/dsg-image.js";import"@amyscript/dsg-heading/dsg-heading.js";import"@amyscript/dsg-text/dsg-text.js";import"@amyscript/dsg-card/dsg-card.js";class DsgInfoCard extends LitElement{render(){return html`
 <style>:host {
   display: flex;
   justify-content: center;
