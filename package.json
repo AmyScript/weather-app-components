@@ -37,10 +37,10 @@
     "new": "yarn run rebuild-wcfcache && wcf element && yarn run test-suite-inject && yarn install --link-duplicates"
   },
   "devDependencies": {
-    "@amyscript/dsg-card": "^8.0.0",
-    "@amyscript/dsg-heading": "^8.0.0",
-    "@amyscript/dsg-image": "^8.0.0",
-    "@amyscript/dsg-text": "^8.0.0",
+    "@amyscript/custom-card": "^8.0.0",
+    "@amyscript/custom-heading": "^8.0.0",
+    "@amyscript/custom-image": "^8.0.0",
+    "@amyscript/custom-text": "^8.0.0",
     "@babel/core": "7.1.5",
     "@babel/preset-env": "7.1.5",
     "@emotion/styled-base": "^0.10.6",
@@ -168,10 +168,6 @@
       "**/slim-js",
       "**/slim-js/**"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run test-suite-inject > /dev/null && lint-staged"
-    }
   }
+
 }

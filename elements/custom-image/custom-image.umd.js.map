@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "file": "custom-image.umd.js",
+  "sources": ["custom-image.umd.js"],
+  "sourcesContent": [
+    "/**\n * Copyright 2019 Amy\n * @license MIT, see License.md for full text.\n */\nimport { LitElement, html } from \"@polymer/lit-element\";\n\n/**\n * `custom-image`\n * `image for info card`\n *\n * @microcopy - language worth noting:\n *  -\n *\n * @customElement\n * @lit-html\n * @lit-element\n * @demo demo/index.html\n */\nclass CustomImage extends LitElement {\n  \n  // render function\n  render() {\n    return html`\n<style>:host { \n  display: flex; \n  justify-content: center;\n  }\n  img {\n    border-radius: 50%;\n    border: 2px solid #E8E8E8;\n  }\n:host([hidden]) { display: none; }</style>\n<div>\n  <img\n    src=${this.url}\n  />\n</div>`;\n  }\n\n  // properties available to the custom element for data binding\n  static get properties() {\n    return {\n  \"url\": {\n    \"name\": \"url\",\n    \"type\": \"String\",\n    \"value\": \"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  }\n}\n;\n  }\n\n  /**\n   * Store the tag name to make it easier to obtain directly.\n   * @notice function name must be here for tooling to operate correctly\n   */\n  tag() {\n    return \"custom-image\";\n  }\n\n  // life cycle\n  constructor() {\n    super();\n  }\n  /**\n   * life cycle, element is afixed to the DOM\n   */\n  connectedCallback() {\n    super.connectedCallback();\n  }\n  // static get observedAttributes() {\n  //   return [];\n  // }\n  // disconnectedCallback() {}\n\n  // attributeChangedCallback(attr, oldValue, newValue) {}\n}\ncustomElements.define(\"custom-image\", CustomImage);\nexport { CustomImage };\n"
+  ],
+  "names": [
+    "CustomImage",
+    "LitElement",
+    "html",
+    "this",
+    "url",
+    "customElements",
+    "define"
+  ],
+  "mappings": "uiDAkBMA,2YAAiBC,yDAIZC,WAYDC,KAAKC,yCAwBJ,uDAjBA,KACF,MACG,WACA,eACC,uBACa,YACV,sHA+BhBC,eAAeC,OAAO,YAAaN"
+}

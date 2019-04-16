@@ -1,0 +1,34 @@
+:host {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+:host([hidden]) {
+  display: none;
+}
+
+custom-image {
+  padding-right: 15px;
+}
+
+.card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #DF5555;
+  padding-bottom: 15px;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
