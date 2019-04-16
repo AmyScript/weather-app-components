@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "file": "custom-input-button.umd.js",
+  "sources": ["custom-input-button.umd.js"],
+  "sourcesContent": [
+    "/**\n * Copyright 2019 Amy\n * @license MIT, see License.md for full text.\n */\nimport { LitElement, html } from \"@polymer/lit-element\";\n\n/**\n * `custom-input-button`\n * `input button`\n *\n * @microcopy - language worth noting:\n *  -\n *\n * @customElement\n * @lit-html\n * @lit-element\n * @demo demo/index.html\n */\nclass CustomInputButton extends LitElement {\n  \n  // render function\n  render() {\n    return html`\n<style>:host {\n  display: block;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\nbutton {\n  width: 23px;\n  height: 23px;\n  border-radius: 50%;\n  background-color: #DF5555;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  border: none;\n  padding: 0px;\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 14px;\n}</style>\n<button id=${this.buttonId} @click=\"${this.onClick}\">+</button>`;\n  }\n\n  // properties available to the custom element for data binding\n  static get properties() {\n    return {\n  \"buttonId\": {\n    \"name\": \"buttonId\",\n    \"type\": \"String\",\n    \"value\": \"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  },\n  \"buttonFunction\": {\n    \"name\": \"buttonFunction\",\n    \"type\": \"Object\",\n    \"value\": \"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  }\n}\n;\n  }\n\n  /**\n   * Store the tag name to make it easier to obtain directly.\n   * @notice function name must be here for tooling to operate correctly\n   */\n  tag() {\n    return \"custom-input-button\";\n  }\n\n  // life cycle\n  constructor() {\n    super();\n    this.buttonId = \"\";\n    this.buttonFunction = () => console.log(\"hello there\");\n  }\n\n  /**\n   * Method to emit event with button's id in e.detail.button when the button is clicked\n   */\n  onClick() {\n    const event = new CustomEvent(\"buttonClicked\", {\n      detail: {\n        button: this.buttonId\n      },\n      bubbles: true\n    });\n    this.dispatchEvent(event);\n    this.buttonFunction();\n    console.log(\"clicked\" + this.id);\n  }\n  /**\n   * life cycle, element is afixed to the DOM\n   */\n  connectedCallback() {\n    super.connectedCallback();\n  }\n  // static get observedAttributes() {\n  //   return [];\n  // }\n  // disconnectedCallback() {}\n\n  // attributeChangedCallback(attr, oldValue, newValue) {}\n}\ncustomElements.define(\"custom-input-button\", CustomInputButton);\nexport { CustomInputButton };\n"
+  ],
+  "names": [
+    "CustomInputButton",
+    "buttonId",
+    "buttonFunction",
+    "console",
+    "log",
+    "LitElement",
+    "html",
+    "this",
+    "onClick",
+    "event",
+    "CustomEvent",
+    "detail",
+    "button",
+    "bubbles",
+    "dispatchEvent",
+    "id",
+    "customElements",
+    "define"
+  ],
+  "mappings": "0xDAkBMA,yKAiEGC,SAAW,KACXC,eAAiB,kBAAMC,QAAQC,IAAI,8PAlEfC,yDAIlBC,WA0BEC,KAAKN,SAAoBM,KAAKC,6CA6BhC,8DAxBA,UACG,MACF,gBACA,eACC,uBACa,YACV,kBAEI,MACR,sBACA,eACC,uBACa,YACV,iDAyBNC,EAAQ,IAAIC,YAAY,gBAAiB,CAC7CC,OAAQ,CACNC,OAAQL,KAAKN,UAEfY,SAAS,SAENC,cAAcL,QACdP,iBACLC,QAAQC,IAAI,UAAYG,KAAKQ,+GAejCC,eAAeC,OAAO,mBAAoBjB"
+}

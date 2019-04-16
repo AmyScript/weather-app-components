@@ -1,0 +1,23 @@
+{
+  "version": 3,
+  "file": "custom-info-card.umd.js",
+  "sources": ["custom-info-card.umd.js"],
+  "sourcesContent": [
+    "/**\n * Copyright 2019 Amy\n * @license MIT, see License.md for full text.\n */\nimport { LitElement, html } from \"@polymer/lit-element\";\nimport \"@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js\";\n\nimport \"@amyscript/custom-image/custom-image.js\";\nimport \"@amyscript/custom-heading/custom-heading.js\";\nimport \"@amyscript/custom-text/custom-text.js\";\nimport \"@amyscript/custom-card/custom-card.js\";\n\n/**\n * `custom-info-card`s\n * `Combines various elements into a info card`\n *\n * @microcopy - language worth noting:\n *  -\n *\n * @customElement\n * @lit-html\n * @lit-element\n * @demo demo/index.html\n */\nclass CustomInfoCard extends LitElement {\n  \n  // render function\n  render() {\n    return html`\n<style>:host {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n  width: 100%;\n  align-items: center;\n}\n\n:host([hidden]) {\n  display: none;\n}\n\ndsg-image {\n  padding-right: 15px;\n}\n\n.card-title {\n  font-family: Roboto;\n  font-style: normal;\n  font-weight: bold;\n  line-height: normal;\n  font-size: 24px;\n  text-align: center;\n  color: #DF5555;\n  padding-bottom: 15px;\n}\n\n.card-content {\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding-bottom: 25px;\n}</style>\n<slot></slot>\n<custom-card width=${this.cardWidth} height=${this.cardHeight}>\n  <div class=\"card-title\">${this.cardTitle}</div>\n  <div class=\"card-content\">\n    <custom-image url=${this.imageUrl}></custom-image><custom-heading content=${this.heading}></custom-heading>\n  </div>\n  <custom-text content=${this.text}></custom-text>\n</custom-card>`;\n  }\n\n  // properties available to the custom element for data binding\n  static get properties() {\n    return {\n  \"imageUrl\": {\n    \"name\": \"imageUrl\",\n    \"type\": \"String\",\n    \"value\": \"\\\"\\\"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  },\n  \"heading\": {\n    \"name\": \"heading\",\n    \"type\": \"String\",\n    \"value\": \"\\\"\\\"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  },\n  \"text\": {\n    \"name\": \"text\",\n    \"type\": \"String\",\n    \"value\": \"\\\"\\\"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  },\n  \"cardHeight\": {\n    \"name\": \"cardHeight\",\n    \"type\": \"String\",\n    \"value\": \"\\\"\\\"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  },\n  \"cardWidth\": {\n    \"name\": \"cardWidth\",\n    \"type\": \"String\",\n    \"value\": \"\\\"\\\"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  },\n  \"cardTitle\": {\n    \"name\": \"cardTitle\",\n    \"type\": \"String\",\n    \"value\": \"\\\"\\\"\",\n    \"reflectToAttribute\": false,\n    \"observer\": false\n  }\n}\n;\n  }\n\n  /**\n   * Store the tag name to make it easier to obtain directly.\n   * @notice function name must be here for tooling to operate correctly\n   */\n  tag() {\n    return \"custom-info-card\";\n  }\n\n  // life cycle\n  constructor() {\n    super();\n    this.imageUrl = \"\";\n    this.heading = \"\";\n    this.text = \"\";\n    this.cardHeight = \"100%\";\n    this.cardWidth = \"300px\";\n    this.cardTitle = \"\";\n  }\n  /**\n   * life cycle, element is afixed to the DOM\n   */\n  connectedCallback() {\n    super.connectedCallback();\n  }\n  // static get observedAttributes() {\n  //   return [];\n  // }\n  // disconnectedCallback() {}\n\n  // attributeChangedCallback(attr, oldValue, newValue) {}\n}\ncustomElements.define(\"custom-info-card\", CustomInfoCard);\nexport { CustomInfoCard };\n"
+  ],
+  "names": [
+    "CustomInfoCard",
+    "imageUrl",
+    "heading",
+    "text",
+    "cardHeight",
+    "cardWidth",
+    "cardTitle",
+    "LitElement",
+    "html",
+    "this",
+    "customElements",
+    "define"
+  ],
+  "mappings": "6jFAwBMA,yKA6GGC,SAAW,KACXC,QAAU,KACVC,KAAO,KACPC,WAAa,SACbC,UAAY,UACZC,UAAY,iPAlHKC,yDAIfC,WAoCOC,KAAKJ,UAAoBI,KAAKL,WACpBK,KAAKH,UAEZG,KAAKR,SAA6CQ,KAAKP,QAEtDO,KAAKN,0CA0DhB,2DApDA,UACG,MACF,gBACA,eACC,yBACa,YACV,WAEH,MACD,eACA,eACC,yBACa,YACV,QAEN,MACE,YACA,eACC,yBACa,YACV,cAEA,MACJ,kBACA,eACC,yBACa,YACV,aAED,MACH,iBACA,eACC,yBACa,YACV,aAED,MACH,iBACA,eACC,yBACa,YACV,sHAqChBO,eAAeC,OAAO,gBAAiBX"
+}
