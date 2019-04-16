@@ -22,103 +22,102 @@ import "@amyscript/custom-card/custom-card.js";
  * @demo demo/index.html
  */
 class CustomInfoCard extends LitElement {
+  
   // render function
   render() {
     return html`
-      <style>
-        :host {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          width: 100%;
-          align-items: center;
-        }
+<style>:host {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 
-        :host([hidden]) {
-          display: none;
-        }
+:host([hidden]) {
+  display: none;
+}
 
-        custom-image {
-          padding-right: 15px;
-        }
+custom-image {
+  padding-right: 15px;
+}
 
-        .card-title {
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold;
-          line-height: normal;
-          font-size: 24px;
-          text-align: center;
-          color: #df5555;
-          padding-bottom: 15px;
-        }
+.card-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+  color: #DF5555;
+  padding-bottom: 15px;
+}
 
-        .card-content {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-bottom: 25px;
-        }
-      </style>
-      <slot></slot>
-      <custom-card width="${this.cardWidth}" height="${this.cardHeight}">
-        <div class="card-title">${this.cardTitle}</div>
-        <div class="card-content">
-          <custom-image url="${this.imageUrl}"></custom-image
-          ><custom-heading content="${this.heading}"></custom-heading>
-        </div>
-        <custom-text content="${this.text}"></custom-text>
-      </custom-card>
-    `;
+.card-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}</style>
+<slot></slot>
+<custom-card width="${this.cardWidth}" height="${this.cardHeight}">
+  <div class="card-title">${this.cardTitle}</div>
+  <div class="card-content">
+    <custom-image url="${this.imageUrl}"></custom-image
+    ><custom-heading content="${this.heading}"></custom-heading>
+  </div>
+  <custom-text content="${this.text}"></custom-text>
+</custom-card>`;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-      imageUrl: {
-        name: "imageUrl",
-        type: "String",
-        value: '""',
-        reflectToAttribute: false,
-        observer: false
-      },
-      heading: {
-        name: "heading",
-        type: "String",
-        value: '""',
-        reflectToAttribute: false,
-        observer: false
-      },
-      text: {
-        name: "text",
-        type: "String",
-        value: '""',
-        reflectToAttribute: false,
-        observer: false
-      },
-      cardHeight: {
-        name: "cardHeight",
-        type: "String",
-        value: '""',
-        reflectToAttribute: false,
-        observer: false
-      },
-      cardWidth: {
-        name: "cardWidth",
-        type: "String",
-        value: '""',
-        reflectToAttribute: false,
-        observer: false
-      },
-      cardTitle: {
-        name: "cardTitle",
-        type: "String",
-        value: '""',
-        reflectToAttribute: false,
-        observer: false
-      }
-    };
+  "imageUrl": {
+    "name": "imageUrl",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "heading": {
+    "name": "heading",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "text": {
+    "name": "text",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardHeight": {
+    "name": "cardHeight",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardWidth": {
+    "name": "cardWidth",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "cardTitle": {
+    "name": "cardTitle",
+    "type": "String",
+    "value": "\"\"",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
   }
 
   /**

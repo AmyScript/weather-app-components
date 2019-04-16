@@ -17,58 +17,57 @@ import { LitElement, html } from "lit-element";
  * @demo demo/index.html
  */
 class CustomInputButton extends LitElement {
+  
   // render function
   render() {
     return html`
-      <style>
-        :host {
-          display: block;
-        }
+<style>:host {
+  display: block;
+}
 
-        :host([hidden]) {
-          display: none;
-        }
+:host([hidden]) {
+  display: none;
+}
 
-        button {
-          width: 23px;
-          height: 23px;
-          border-radius: 50%;
-          background-color: #df5555;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border: none;
-          padding: 0px;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold;
-          line-height: normal;
-          font-size: 14px;
-        }
-      </style>
-      <button id="${this.buttonId}" @click="${this.onClick}">+</button>
-    `;
+button {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #DF5555;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+}</style>
+<button id=${this.buttonId} @click="${this.onClick}">+</button>`;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-      buttonId: {
-        name: "buttonId",
-        type: "String",
-        value: "",
-        reflectToAttribute: false,
-        observer: false
-      },
-      buttonFunction: {
-        name: "buttonFunction",
-        type: "Object",
-        value: "",
-        reflectToAttribute: false,
-        observer: false
-      }
-    };
+  "buttonId": {
+    "name": "buttonId",
+    "type": "String",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "buttonFunction": {
+    "name": "buttonFunction",
+    "type": "Object",
+    "value": "",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
   }
 
   /**

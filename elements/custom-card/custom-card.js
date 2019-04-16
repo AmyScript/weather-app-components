@@ -18,49 +18,50 @@ import { LitElement, html } from "lit-element";
  * @demo demo/index.html
  */
 class CustomCard extends LitElement {
+  
   // render function
   render() {
     return html`
-      <style>
-        :host {
-          box-sizing: border-box;
-          width: ${this.width};
-          height: ${this.height};
-          border-radius: 20px;
-          padding: 30px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          background-color: white;
-          border: 1px solid lightgrey;
-        }
-        :host([hidden]) {
-          display: none;
-        }
-      </style>
-      <slot></slot>
-      <div><slot></slot></div>
-    `;
+<style>
+:host { 
+  box-sizing: border-box;
+  width: ${this.width};
+  height: ${this.height};
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+:host([hidden]) { display: none; }
+</style>
+<slot></slot>
+<div>
+  <slot></slot>
+</div>`;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-      width: {
-        name: "width",
-        type: "String",
-        value: "300px",
-        reflectToAttribute: false,
-        observer: false
-      },
-      height: {
-        name: "height",
-        type: "String",
-        value: "300px",
-        reflectToAttribute: false,
-        observer: false
-      }
-    };
+  "width": {
+    "name": "width",
+    "type": "String",
+    "value": "300px",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "height": {
+    "name": "height",
+    "type": "String",
+    "value": "300px",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
   }
 
   /**

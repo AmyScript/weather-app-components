@@ -17,74 +17,73 @@ import { LitElement, html } from "lit-element";
  * @demo demo/index.html
  */
 class CustomInput extends LitElement {
+  
   // render function
   render() {
     return html`
-      <style>
-        :host {
-          display: block;
-        }
+<style>:host {
+  display: block;
+}
 
-        :host([hidden]) {
-          display: none;
-          box-sizing: border-box;
-        }
+:host([hidden]) {
+  display: none;
+  box-sizing: border-box;
+}
 
-        input {
-          background: #ffffff;
-          border-radius: 20px;
-          border-style: none;
-          font-size: 15px;
-          font-family: Roboto;
-          font-style: normal;
-          font-weight: bold;
-          line-height: normal;
-          width: ${this.width};
-          border: 1px solid lightgrey;
-          padding: 5px;
-          padding-left: 10px;
-          box-sizing: inherit;
-        }
+input {
+  background: #FFFFFF;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  width: ${this.width};
+  border: 1px solid lightgrey;
+  padding: 5px;
+  padding-left: 10px;
+  box-sizing: inherit;
+}
 
-        input:focus {
-          outline: none;
-        }
-      </style>
-      <input
-        id="${this.inputId}"
-        type="text"
-        .value="${this.cityProp}"
-        @input="${this.handleInput}"
-      />
-    `;
+input:focus {
+  outline: none;
+}</style>
+<input
+  id=${this.inputId}
+  type="text"
+  .value=${this.cityProp}
+  @input=${this.handleInput}
+/>`;
   }
 
   // properties available to the custom element for data binding
   static get properties() {
     return {
-      cityProp: {
-        name: "cityProp",
-        type: "String",
-        value: " ",
-        reflect: true,
-        attribute: true,
-        observer: false
-      },
-      inputId: {
-        name: "inputId",
-        type: "String",
-        value: " ",
-        reflectToAttribute: false,
-        observer: false
-      },
-      width: {
-        name: "width",
-        type: "String",
-        value: " ",
-        reflectToAttribute: false,
-        observer: false
-      }
-    };
+  "cityProp": {
+    "name": "cityProp",
+    "type": "String",
+    "value": " ",
+    "reflect": true,
+    "attribute": true,
+    "observer": false
+  },
+  "inputId": {
+    "name": "inputId",
+    "type": "String",
+    "value": " ",
+    "reflectToAttribute": false,
+    "observer": false
+  },
+  "width": {
+    "name": "width",
+    "type": "String",
+    "value": " ",
+    "reflectToAttribute": false,
+    "observer": false
+  }
+}
+;
   }
 
   /**
