@@ -16,7 +16,7 @@
       "hax": "src/custom-text-hax.json"
     }
   },
-  "version": "8.0.0",
+  "version": "9.0.0",
   "description": "Text content for info card",
   "repository": {
     "type": "git",

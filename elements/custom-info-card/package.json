@@ -16,7 +16,7 @@
       "hax": "src/custom-info-card-hax.json"
     }
   },
-  "version": "8.0.0",
+  "version": "9.0.0",
   "description": "Combines various elements into a info card",
   "repository": {
     "type": "git",
@@ -40,10 +40,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@amyscript/custom-card": "^8.0.0",
-    "@amyscript/custom-heading": "^8.0.0",
-    "@amyscript/custom-image": "^8.0.0",
-    "@amyscript/custom-text": "^8.0.0",
+    "@amyscript/custom-card": "^9.0.0",
+    "@amyscript/custom-heading": "^9.0.0",
+    "@amyscript/custom-image": "^9.0.0",
+    "@amyscript/custom-text": "^9.0.0",
     "lit-element": "^2.0.0-rc.5"
   },
   "devDependencies": {
